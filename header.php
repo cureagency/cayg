@@ -39,7 +39,7 @@
 <div id="page" class="site">
 	<a class="skip-link screen-reader-text" href="#primary"><?php esc_html_e( 'Skip to content', 'cure' ); ?></a>
 
-	<header id="masthead" class="site-header" style="background-color: #0e272d;">
+	<header id="masthead" class="site-header">
 		<div class="container">
 			<div class="row">
 				<div class="col">
@@ -47,8 +47,8 @@
 						<?php
 						wp_nav_menu(
 							array(
-								'theme_location' => 'menu-1',
-								'menu_id'        => 'primary-menu',
+								'theme_location' => 'main-menu',
+								'menu_id'        => 'main-menu',
 							)
 						);
 						?>
