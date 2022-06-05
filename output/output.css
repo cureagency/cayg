@@ -1,0 +1,303 @@
+/*!
+Theme Name: Cure
+Author URI: curedesign.co
+Version: 1.0.0
+
+Normalizing styles have been helped along thanks to the fine work of
+Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
+*/
+/*--------------------------------------------------------------
+# Normalize
+--------------------------------------------------------------*/
+h1 {
+  font-size: 45px;
+  color: #0e272d;
+  font-family: proxima-nova, sans-serif;
+  font-weight: 600;
+  margin-top: 0;
+}
+
+h2 {
+  font-size: 25px;
+  font-family: proxima-nova, sans-serif;
+  font-weight: 600;
+}
+
+h3,
+h4,
+h5,
+h6 {
+  font-family: proxima-nova, sans-serif;
+}
+
+p {
+  font-family: proxima-nova, sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+}
+
+a.footer-link {
+  color: white !important;
+  text-decoration: none;
+  transition: all 1s;
+}
+a.footer-link:hover {
+  opacity: 0.6;
+}
+
+#mega-menu-wrap-menu-1 #mega-menu-menu-1 > li.mega-menu-item > a.mega-menu-link {
+  letter-spacing: 2px;
+  transition: all 2s;
+}
+
+.slider-wrap {
+  width: 100%;
+}
+
+.nav-slide-wrap {
+  padding: 15px;
+  box-sizing: border-box;
+}
+
+.nav-slide {
+  border-left: 4px solid white;
+  background-color: rgba(255, 255, 255, 0.3);
+  padding: 0 25px 0 35px;
+  transition: all 2s;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  min-height: 100px;
+  display: flex;
+  align-items: center;
+}
+.nav-slide p {
+  color: #0e272d;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin: 10px 0;
+  font-size: 14px;
+}
+
+.slick-current .nav-slide {
+  border-left: 4px solid #57c988;
+  background-color: white;
+}
+
+.white-button {
+  padding: 10px 15px;
+  background-color: transparent;
+  border-radius: 5px;
+  border: 1px solid white;
+  color: white !important;
+  text-decoration: none;
+  display: inline-block;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  transition: all 1s;
+}
+.white-button:hover {
+  background-color: white;
+  border: 1px solid white;
+  color: #0e272d !important;
+}
+
+.cta-box-button {
+  padding: 10px 15px;
+  background-color: white;
+  border-radius: 5px;
+  border: 1px solid #0e272d;
+  color: #0e272d !important;
+  text-decoration: none;
+  display: inline-block;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  transition: all 1s;
+}
+.cta-box-button:hover {
+  background-color: #57c988;
+  border: 1px solid white;
+  color: white !important;
+}
+
+.background-icon {
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-color: #0e272d;
+}
+
+.content-card-left {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.content-card-left p {
+  color: white;
+  margin-bottom: 50px;
+}
+
+.content-card {
+  padding: 50px;
+  background-color: white;
+  box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.5);
+}
+.content-card p {
+  color: #0e272d;
+  margin-bottom: 30px;
+}
+
+.col-cta-wrap {
+  padding: 50px;
+  color: #0e272d;
+  transition: 2s all;
+}
+.col-cta-wrap:hover {
+  background-color: #edf4f4;
+}
+
+.col-cta-wrap-left {
+  border-right: 1px solid #0e272d;
+}
+
+.col-cta-wrap-right {
+  border-left: 1px solid #0e272d;
+}
+
+.cta-box {
+  padding: 50px 25px;
+  box-sizing: border-box;
+  display: flex;
+  height: 100%;
+}
+
+.cta-box-default {
+  border: 1px solid #edf4f4;
+  box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.02);
+  color: #0e272d;
+  border-radius: 25px;
+}
+
+.cta-box-verylightblue {
+  background-color: #edf4f4;
+}
+
+.cta-box-lightblue {
+  background-color: #57c988;
+}
+
+.green-line {
+  border-top: 5px solid #57c988;
+  width: 50px;
+  margin: 20px 0 30px;
+}
+
+.slide-large {
+  margin-bottom: 50px;
+}
+
+.slider-for-wrap {
+  box-sizing: border-box;
+  padding: 50px 0 50px 50px;
+  width: 100%;
+}
+
+.div-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.first-div {
+  order: 1;
+}
+
+.second-div {
+  order: 2;
+}
+
+@media only screen and (max-width: 996px) {
+  .content-card {
+    text-align: center;
+  }
+  .content-card p {
+    padding-right: 0;
+  }
+
+  .green-line {
+    margin: 20px auto 30px;
+  }
+
+  h1 {
+    font-size: 50px;
+  }
+
+  h2 {
+    font-size: 20px;
+  }
+
+  .col-cta-wrap {
+    padding: 0;
+  }
+
+  .col-cta-wrap-left {
+    border-right: none;
+    border-bottom: 1px solid #0e272d;
+  }
+
+  .col-cta-wrap-right {
+    border-left: none;
+    border-top: 1px solid #0e272d;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .div-wrapper {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 50px;
+  }
+
+  .first-div {
+    order: 2;
+  }
+
+  .second-div {
+    order: 1;
+  }
+
+  .slider-for-wrap {
+    padding: 0;
+    width: 100%;
+  }
+
+  .content-card {
+    padding: 20px 5px;
+  }
+
+  h1 {
+    font-size: 30px;
+  }
+
+  .padding-wrap {
+    margin: 20px 0;
+  }
+
+  .nav-slide-wrap {
+    padding: 5px;
+  }
+
+  .nav-slide {
+    padding: 0 5px 0 5px;
+  }
+
+  .slick-next {
+    right: 5px !important;
+  }
+
+  .slick-prev {
+    left: 5px !important;
+  }
+}
+
+/*# sourceMappingURL=output.css.map */
