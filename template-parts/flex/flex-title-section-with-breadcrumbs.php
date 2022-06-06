@@ -1,4 +1,4 @@
-<div class="container-fluid pt-5 pb-5 navy-bg">
+<div class="container-fluid pt-5 pb-5 bg-navy">
 	<div class="container">
 		<div class="row">
 	  		<div class="col-lg-6">
