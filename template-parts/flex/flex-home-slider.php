@@ -44,14 +44,13 @@
 	<div class="row align-items-center bg-white home-slider-overlay">
 		<?php if( have_rows('overlay_button') ): ?>
 			<?php while( have_rows('overlay_button') ): the_row(); ?>
-					<div class="col-lg-4">
-						<a href="<?php the_sub_field('link'); ?>">
-							<div class="home-slider-overlay-portion pt-2 pb-2">
-								<h2><?php the_sub_field('title_text'); ?></h2>
-								<p><?php the_sub_field('description_text'); ?></p>
-						    </div>
-						</a>
-					</div>
+				<div class="col-lg-4">
+					<a href="<?php the_sub_field('link'); ?>">
+						<div class="home-slider-overlay-portion pt-2 pb-2">
+							<h2><?php the_sub_field('title_text'); ?></h2>
+							<p><?php the_sub_field('description_text'); ?></p>
+					    </div>
+					</a>
 				</div>
 		    <?php endwhile; ?>
 		<?php endif; ?>	
