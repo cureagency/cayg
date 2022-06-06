@@ -21,14 +21,18 @@
 			    // Loop through rows.
 			    while ( have_rows('content') ) : the_row();
 
-			        if( get_row_layout() == 'post_slider' ):
+			        if( get_row_layout() == 'home_slider' ):
 
-			        	get_template_part( 'template-parts/flex-header-post-slider' );
+			        	get_template_part( 'template-parts/flex/flex-home-slider' );
+
+			        elseif( get_row_layout() == 'post_slider' ):
+
+			        	get_template_part( 'template-parts/flex/flex-header-post-slider' );
 
 
 			        elseif( get_row_layout() == '3_calls_to_action' ): 
 
-			        	get_template_part( 'template-parts/flex-3-col-cta' );
+			        	get_template_part( 'template-parts/flex/flex-3-col-cta' );
 
 			        endif;
 

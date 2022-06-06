@@ -9,6 +9,24 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 /*--------------------------------------------------------------
 # Normalize
 --------------------------------------------------------------*/
+.white-text {
+  color: white !important;
+}
+
+.navy-text {
+  color: #0E272D !important;
+}
+
+.green-text {
+  color: #57C988 !important;
+}
+
+.background-image {
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
 h1 {
   font-size: 45px;
   color: #0e272d;
@@ -21,6 +39,13 @@ h2 {
   font-size: 25px;
   font-family: proxima-nova, sans-serif;
   font-weight: 600;
+}
+
+h4 {
+  font-size: 16px;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 1px;
 }
 
 h3,
@@ -298,6 +323,35 @@ a.footer-link:hover {
   .slick-prev {
     left: 5px !important;
   }
+}
+.home-slider-slide {
+  height: calc(100vh - 120px);
+  width: 100%;
+  background-color: #0E272D;
+}
+
+.home-slider .slick-dots {
+  bottom: 50%;
+  right: 50px;
+  width: auto;
+}
+.home-slider .slick-dots li {
+  display: block;
+}
+.home-slider .slick-dots li button {
+  margin-top: 10px;
+}
+.home-slider .slick-dots li.slick-active button:before {
+  color: white;
+  height: 35px;
+  width: 35px;
+  font-size: 20px;
+}
+.home-slider .slick-dots li button:before {
+  color: white;
+  height: 35px;
+  width: 35px;
+  font-size: 20px;
 }
 
 /*# sourceMappingURL=output.css.map */

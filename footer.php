@@ -14,6 +14,7 @@
 	<footer id="colophon" class="site-footer">
 		<div class="site-info">
 			<div class="container">
+				
 				<div class="row">
 					<div class="col-lg-4">
 					</div>
@@ -26,6 +27,7 @@
 					<div class="col-lg-2">
 					</div>					
 				</div>
+
 				<div class="row">
 					<div class="col-lg-6">
 						<p>Copyright 2022 CAYG</p>
@@ -34,6 +36,7 @@
 						<p style="text-align: right;">All Rights Reserved</p>
 					</div>							
 				</div>
+
 			</div>
 		</div><!-- .site-info -->
 	</footer><!-- #colophon -->

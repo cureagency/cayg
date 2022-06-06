@@ -1,0 +1,29 @@
+.home-slider-slide {
+	height: calc(100vh - 120px);
+	width: 100%;
+	background-color: $navy;
+}
+
+.home-slider .slick-dots {
+	bottom: 50%;
+	right: 50px;
+	width: auto;
+	li {
+		display: block;
+		button {
+			margin-top: 10px;
+		}
+	}
+	li.slick-active button:before {
+		color: white;
+		height: 35px;
+		width: 35px;
+		font-size: 20px;	
+	}
+	li button:before {
+		color: white;
+		height: 35px;
+		width: 35px;
+		font-size: 20px;
+	}
+}
