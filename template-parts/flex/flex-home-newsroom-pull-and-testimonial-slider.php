@@ -1,7 +1,7 @@
 <div class="container pt-5 pb-5">
 	<div class="row align-items-center">
   		<div class="col-lg-8">
-			<h4 class="blue-text mb-2"><?php the_sub_field('onews_overline'); ?></h4>
+			<h4 class="blue-text mb-2"><?php the_sub_field('newsroom_overline'); ?></h4>
 	    	<h1 class="mb-2"><?php the_sub_field('newsroom_title'); ?></h1>
 	        <p>
 	        	<?php if( have_rows('newsroom_button') ): ?>
