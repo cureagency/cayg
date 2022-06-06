@@ -31,6 +31,33 @@
 				        get_template_part( 'template-parts/flex/flex-home-cards-angle-section' );
 
 				    
+				    elseif( get_row_layout() == 'home_newsroom_pull_and_testimonial_slider' ):
+
+				        get_template_part( 'template-parts/flex/flex-home-newsroom-pull-and-testimonial-slider' );
+	    
+				    elseif( get_row_layout() == 'supporting_organizations_slider' ):
+
+				        get_template_part( 'template-parts/flex/flex-supporting-organizations-slider' );
+
+				    
+				    elseif( get_row_layout() == 'cta_block_on_angle_bg' ):
+
+				        get_template_part( 'template-parts/flex/flex-cta-block-on-angle-bg' );
+
+				   
+				    elseif( get_row_layout() == '1_column_wysiwyg' ):
+
+				        get_template_part( 'template-parts/flex/flex-1-column-wysiwyg' );
+
+				    elseif( get_row_layout() == '2_column_wysiwyg' ):
+
+				        get_template_part( 'template-parts/flex/flex-2-column-wysiwyg' );
+
+				    elseif( get_row_layout() == '3_column_wysiwyg' ):
+
+				        get_template_part( 'template-parts/flex/flex-3-column-wysiwyg' );
+
+
 				    elseif( get_row_layout() == '2_column_image_and_cta_text' ):
 
 				        get_template_part( 'template-parts/flex/flex-2-column-image-and-cta-text' );

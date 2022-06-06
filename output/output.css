@@ -75,7 +75,7 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
   color: white !important;
 }
 
-.nobg-button {
+.nobg-blue-button {
   padding: 5px 25px;
   border-radius: 5px;
   color: #5BC0CE !important;
@@ -87,7 +87,7 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
   text-transform: uppercase;
   transition: all 1s;
 }
-.nobg-button:hover {
+.nobg-blue-button:hover {
   color: white !important;
   opacity: 0.3;
 }

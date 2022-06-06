@@ -9,7 +9,7 @@
 	  	</div>
 	  	<div class="col-lg-5">
 			<h4 class="blue-text mb-2"><?php the_sub_field('overline'); ?></h4>
-	    	<h1 class="mb-2"><?php the_sub_field('header'); ?></h1>
+	    	<h1 class="mb-2"><?php the_sub_field('title'); ?></h1>
 	        <p class="mb-4"><?php the_sub_field('paragraph'); ?></p>
 	        <p>
 	        	<?php if( have_rows('button_1') ): ?>
