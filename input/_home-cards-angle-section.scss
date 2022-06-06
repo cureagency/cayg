@@ -1,0 +1,21 @@
+.home-framework-card-wrap {
+	padding: 50px;
+	.home-framework-card {
+		background-color: white;
+		text-align: center;
+		padding: 50px 25px;
+		border-radius: 10px;
+		a {
+			color: $navy;
+			text-decoration: none;
+		}
+		&:hover {
+			background-color: $green;
+			-webkit-box-shadow: 0px 0px 6px 5px rgba(0,0,0,0.12); 
+			box-shadow: 0px 0px 6px 5px rgba(0,0,0,0.12);
+			a {
+				color: white;
+			}
+		}
+	}
+}

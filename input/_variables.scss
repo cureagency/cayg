@@ -1,6 +1,7 @@
 $navy: #0E272D;
 $green: #57C988;
 $blue: #5BC0CE;
+$lightblue: #EDF4F4;
 
 
 .white-text {
@@ -21,4 +22,15 @@ $blue: #5BC0CE;
 }
 .bg-navy {
 	background-color: $navy;
+}
+.bg-lightblue {
+	background-color: $lightblue;
+}
+
+.border-radius {
+	border-radius: 15px;
+}
+
+.center-text {
+	text-align: center;
 }

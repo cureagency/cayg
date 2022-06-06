@@ -33,6 +33,18 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
   background-color: #0E272D;
 }
 
+.bg-lightblue {
+  background-color: #EDF4F4;
+}
+
+.border-radius {
+  border-radius: 15px;
+}
+
+.center-text {
+  text-align: center;
+}
+
 .background-image {
   background-size: cover;
   background-position: center center;
@@ -452,6 +464,43 @@ a.footer-link:hover {
   z-index: 50;
   position: relative;
   padding: 20px 50px;
+}
+.home-slider-overlay div {
+  padding: 0 50px 0 20px;
+}
+.home-slider-overlay div a {
+  color: #0E272D;
+  text-decoration: none;
+  transition: all 2s;
+}
+.home-slider-overlay div:hover a {
+  color: #57C988;
+}
+.home-slider-overlay div:nth-child(2) {
+  border-left: 3px solid #EDF4F4;
+  border-right: 3px solid #EDF4F4;
+}
+
+.home-framework-card-wrap {
+  padding: 50px;
+}
+.home-framework-card-wrap .home-framework-card {
+  background-color: white;
+  text-align: center;
+  padding: 50px 25px;
+  border-radius: 10px;
+}
+.home-framework-card-wrap .home-framework-card a {
+  color: #0E272D;
+  text-decoration: none;
+}
+.home-framework-card-wrap .home-framework-card:hover {
+  background-color: #57C988;
+  -webkit-box-shadow: 0px 0px 6px 5px rgba(0, 0, 0, 0.12);
+  box-shadow: 0px 0px 6px 5px rgba(0, 0, 0, 0.12);
+}
+.home-framework-card-wrap .home-framework-card:hover a {
+  color: white;
 }
 
 /*# sourceMappingURL=output.css.map */
