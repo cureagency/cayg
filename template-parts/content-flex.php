@@ -30,6 +30,11 @@
 
 				        get_template_part( 'template-parts/flex/flex-home-cards-angle-section' );
 
+				    
+				    elseif( get_row_layout() == '2_column_image_and_cta_text' ):
+
+				        get_template_part( 'template-parts/flex/flex-2-column-image-and-cta-text' );
+
 
 			        elseif( get_row_layout() == 'post_slider' ):
 

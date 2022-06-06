@@ -18,6 +18,43 @@
 	}	
 }
 
+.blue-button {
+	padding: 5px 25px;
+	background-color: $blue;
+	border-radius: 5px;
+	border: 1px solid $blue;
+	color: white !important;
+	text-decoration: none;
+	display: inline-block;
+	font-weight: 600;
+	font-size: 14px;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	transition: all 1s;
+	&:hover {
+		background-color: $navy;
+		border: 1px solid $navy;
+		color: white !important;
+	}	
+}
+
+.nobg-button {
+	padding: 5px 25px;
+	border-radius: 5px;
+	color: $blue !important;
+	text-decoration: none;
+	display: inline-block;
+	font-weight: 600;
+	font-size: 14px;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	transition: all 1s;
+	&:hover {
+		color: white !important;
+		opacity: 0.3;
+	}	
+}
+
 .nobg-button {
 	padding: 5px 25px;
 	border-radius: 5px;
