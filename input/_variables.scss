@@ -27,10 +27,23 @@ $lightblue: #EDF4F4;
 	background-color: $lightblue;
 }
 
+.angle-top-bg-navy  {
+	background-color: $navy;
+	height: 200px;
+	margin-top: -200px;
+	position: relative;
+	z-index: 5;
+}
+
 .border-radius {
 	border-radius: 15px;
 }
 
 .center-text {
 	text-align: center;
+}
+
+.top-z-index {
+	position: relative;
+	z-index: 500;
 }
