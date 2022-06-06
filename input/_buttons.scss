@@ -71,3 +71,19 @@
 		opacity: 0.3;
 	}	
 }
+
+.nobg-nop-button {
+	padding: 0;
+	color: white !important;
+	text-decoration: none;
+	display: inline-block;
+	font-weight: 600;
+	font-size: 14px;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	transition: all 1s;
+	&:hover {
+		color: white !important;
+		opacity: 0.3;
+	}	
+}
