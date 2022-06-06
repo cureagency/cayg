@@ -30,6 +30,10 @@
 
 				        get_template_part( 'template-parts/flex/flex-home-cards-angle-section' );
 
+
+				    elseif( get_row_layout() == 'home_image_angle_section' ):
+
+				        get_template_part( 'template-parts/flex/flex-home-image-angle-section' );
 				    
 				    elseif( get_row_layout() == 'home_newsroom_pull_and_testimonial_slider' ):
 
