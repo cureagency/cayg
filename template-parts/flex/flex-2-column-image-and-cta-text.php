@@ -1,8 +1,8 @@
-<div class="container">
+<div class="container mt-5 mb-5">
 	<div class="row align-items-center">
   		<div class="col-lg-5">
   			<?php if( get_sub_field('image') ): ?>
-			    <img src="<?php the_sub_field('image'); ?>" />
+			    <img class="border-radius" src="<?php the_sub_field('image'); ?>" />
 			<?php endif; ?>
 	  	</div>
 	  	<div class="col-lg-1">
