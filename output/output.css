@@ -21,10 +21,51 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
   color: #57C988 !important;
 }
 
+.bg-white {
+  background-color: white;
+}
+
 .background-image {
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
+}
+
+.green-button {
+  padding: 5px 25px;
+  background-color: #57C988;
+  border-radius: 5px;
+  border: 1px solid #57C988;
+  color: white !important;
+  text-decoration: none;
+  display: inline-block;
+  font-weight: 600;
+  font-size: 14px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  transition: all 1s;
+}
+.green-button:hover {
+  background-color: #0E272D;
+  border: 1px solid #0E272D;
+  color: white !important;
+}
+
+.nobg-button {
+  padding: 5px 25px;
+  border-radius: 5px;
+  color: white !important;
+  text-decoration: none;
+  display: inline-block;
+  font-weight: 600;
+  font-size: 14px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  transition: all 1s;
+}
+.nobg-button:hover {
+  color: white !important;
+  opacity: 0.3;
 }
 
 h1 {
@@ -32,13 +73,14 @@ h1 {
   color: #0e272d;
   font-family: proxima-nova, sans-serif;
   font-weight: 600;
-  margin-top: 0;
+  margin: 0;
 }
 
 h2 {
   font-size: 25px;
   font-family: proxima-nova, sans-serif;
   font-weight: 600;
+  margin: 0;
 }
 
 h4 {
@@ -46,6 +88,7 @@ h4 {
   text-transform: uppercase;
   font-weight: 600;
   letter-spacing: 1px;
+  margin: 0;
 }
 
 h3,
@@ -53,12 +96,14 @@ h4,
 h5,
 h6 {
   font-family: proxima-nova, sans-serif;
+  margin: 0;
 }
 
 p {
   font-family: proxima-nova, sans-serif;
   font-weight: 400;
   font-size: 18px;
+  margin: 0;
 }
 
 a.footer-link {
@@ -352,6 +397,16 @@ a.footer-link:hover {
   height: 35px;
   width: 35px;
   font-size: 20px;
+}
+
+.home-slider-overlay {
+  margin-top: -150px;
+  min-height: 150px;
+  background-color: white;
+  border-radius: 20px;
+  z-index: 50;
+  position: relative;
+  padding: 20px 50px;
 }
 
 /*# sourceMappingURL=output.css.map */

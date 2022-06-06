@@ -27,3 +27,13 @@
 		font-size: 20px;
 	}
 }
+
+.home-slider-overlay {
+	margin-top: -150px;
+	min-height: 150px;
+	background-color: white;
+	border-radius: 20px;
+	z-index: 50;
+	position: relative;
+	padding: 20px 50px;
+}
