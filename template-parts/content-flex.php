@@ -44,7 +44,10 @@
 
 				        get_template_part( 'template-parts/flex/flex-cta-block-on-angle-bg' );
 
-				   
+				    elseif( get_row_layout() == 'title_section_with_breadcrumbs' ):
+
+				        get_template_part( 'template-parts/flex/flex-title-section-with-breadcrumbs' )
+
 				    elseif( get_row_layout() == '1_column_wysiwyg' ):
 
 				        get_template_part( 'template-parts/flex/flex-1-column-wysiwyg' );
