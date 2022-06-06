@@ -12,7 +12,7 @@
  * @package cure
  */
 
-get_header();
+get_header('old');
 ?>
 
 	<main id="primary" class="site-main">
@@ -54,4 +54,4 @@ get_header();
 
 <?php
 get_sidebar();
-get_footer();
+get_footer('old';

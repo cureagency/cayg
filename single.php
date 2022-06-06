@@ -7,7 +7,7 @@
  * @package cure
  */
 
-get_header();
+get_header('old');
 ?>
 
 	<main id="primary" class="site-main">
@@ -25,4 +25,4 @@ get_header();
 	</main><!-- #main -->
 
 <?php
-get_footer();
+get_footer('old');
