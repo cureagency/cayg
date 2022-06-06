@@ -25,6 +25,12 @@
 
 			        	get_template_part( 'template-parts/flex/flex-home-slider' );
 
+
+				    elseif( get_row_layout() == 'home_cards_angle_section' ):
+
+				        get_template_part( 'template-parts/flex/flex-home-cards-angle-section' );
+
+
 			        elseif( get_row_layout() == 'post_slider' ):
 
 			        	get_template_part( 'template-parts/flex/flex-header-post-slider' );
