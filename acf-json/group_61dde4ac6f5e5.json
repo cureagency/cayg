@@ -16,6 +16,35 @@
                 "id": ""
             },
             "layouts": {
+                "layout_629e240555600": {
+                    "key": "layout_629e240555600",
+                    "name": "title_section_with_breadcrumbs",
+                    "label": "Title Section with Breadcrumbs",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_629e241055601",
+                            "label": "Page Title",
+                            "name": "page_title",
+                            "type": "text",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "maxlength": ""
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                },
                 "layout_629d17288702b": {
                     "key": "layout_629d17288702b",
                     "name": "home_slider",
@@ -1477,5 +1506,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1654525295
+    "modified": 1654531947
 }
