@@ -6,9 +6,9 @@
 	    	<h1 class="mb-2 white-text"><?php the_sub_field('cta_title'); ?></h1>
 	  	</div>
 	  	<div class="col-lg-4" style="text-align: right;">
-	    	<?php if( have_rows('newsroom_button') ): ?>
-			    <?php while( have_rows('newsroom_button') ): the_row(); ?>
-			       <a class="blue-button" href="<?php the_sub_field('button_url'); ?>"><?php the_sub_field('button_text'); ?></a>
+	    	<?php if( have_rows('button') ): ?>
+			    <?php while( have_rows('button') ): the_row(); ?>
+			       <a class="blue-button" href="<?php the_sub_field('url'); ?>"><?php the_sub_field('text'); ?></a>
 			    <?php endwhile; ?>
 			<?php endif; ?>	
 	  	</div>
