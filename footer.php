@@ -15,7 +15,7 @@
 		<div class="site-info">
 			<div class="container">
 				
-				<div class="row">
+				<div class="row pt-2 pb-5">
 					<div class="col-lg-4">
 						<?php the_field('column_1', 'options'); ?>
 					</div>
