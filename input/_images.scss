@@ -3,3 +3,11 @@
 	background-position: center center;
 	background-repeat: no-repeat;
 }
+
+.imageincircle {
+	width: 200px;
+	height: 200px;
+	object-fit: contain;
+	border-radius: 50%;
+	border: 3px solid white;
+}

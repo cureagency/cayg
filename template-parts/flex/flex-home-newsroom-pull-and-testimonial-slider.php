@@ -22,7 +22,33 @@
 		    </div>
 	  	</div>
 	  	<div class="col-lg-4 bg-lightblue testimonial-bg">
-			Testimonials Section
+		    <?php if( have_rows('testimonials') ): ?>
+		    	<div class="testimonials-slider">
+					<?php while( have_rows('testimonials') ): the_row(); ?>
+						<div class="testimonials-slide" style="padding: 0 20px;">
+							<?php if( get_sub_field('headshot') ): ?>
+							    <img class="imageincircle mb-3" src="<?php the_sub_field('headshot'); ?>" />
+							<?php endif; ?>
+							<p style="text-align: center;">"<?php the_sub_field('quote'); ?>"</p>
+			    			<p style="text-align: center;"><strong><?php the_sub_field('attribution'); ?></strong></p>
+						</div>
+				    <?php endwhile; ?>
+				</div>
+			<?php endif; ?>	
+		</div>
+
+		<script>
+			jQuery(function($){
+				$('.testimonials-slider').slick({
+				  slidesToShow: 1,
+				  slidesToScroll: 1,
+				  autoplay: true,
+				  arrows: false,
+				  dots: true,
+				  autoplaySpeed: 2000,
+				});
+			});
+		</script>
 	  	</div>
 	</div>
 </div>

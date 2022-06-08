@@ -69,6 +69,14 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
   background-repeat: no-repeat;
 }
 
+.imageincircle {
+  width: 200px;
+  height: 200px;
+  object-fit: contain;
+  border-radius: 50%;
+  border: 3px solid white;
+}
+
 .green-button {
   padding: 5px 25px;
   background-color: #57C988;
