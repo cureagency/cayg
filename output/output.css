@@ -75,6 +75,8 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
   object-fit: contain;
   border-radius: 50%;
   border: 3px solid white;
+  display: block;
+  margin: 0 auto;
 }
 
 .green-button {
@@ -135,6 +137,26 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
   background-color: #0E272D;
   border: 1px solid #0E272D;
   color: #EDF4F4 !important;
+}
+
+.white-border-button {
+  padding: 5px 25px;
+  background-color: none;
+  border-radius: 5px;
+  border: 1px solid white;
+  color: white !important;
+  text-decoration: none;
+  display: inline-block;
+  font-weight: 600;
+  font-size: 14px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  transition: all 1s;
+}
+.white-border-button:hover {
+  background-color: #0E272D;
+  border: 1px solid white;
+  color: white !important;
 }
 
 .nobg-blue-button {
