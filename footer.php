@@ -17,14 +17,19 @@
 				
 				<div class="row">
 					<div class="col-lg-4">
+						<?php the_field('header_title', 'column_1'); ?>
 					</div>
 					<div class="col-lg-2">
+						<?php the_field('header_title', 'column_2'); ?>
 					</div>	
 					<div class="col-lg-2">
+						<?php the_field('header_title', 'column_3'); ?>
 					</div>	
 					<div class="col-lg-2">
+						<?php the_field('header_title', 'column_4'); ?>
 					</div>	
 					<div class="col-lg-2">
+						<?php the_field('header_title', 'column_5'); ?>
 					</div>					
 				</div>
 

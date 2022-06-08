@@ -109,6 +109,26 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
   color: white !important;
 }
 
+.lightblue-button {
+  padding: 5px 25px;
+  background-color: #EDF4F4;
+  border-radius: 5px;
+  border: 1px solid #EDF4F4;
+  color: #0E272D !important;
+  text-decoration: none;
+  display: inline-block;
+  font-weight: 600;
+  font-size: 14px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  transition: all 1s;
+}
+.lightblue-button:hover {
+  background-color: #0E272D;
+  border: 1px solid #0E272D;
+  color: #EDF4F4 !important;
+}
+
 .nobg-blue-button {
   padding: 5px 25px;
   border-radius: 5px;
@@ -122,8 +142,7 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
   transition: all 1s;
 }
 .nobg-blue-button:hover {
-  color: white !important;
-  opacity: 0.3;
+  color: #0E272D !important;
 }
 
 .nobg-button {
@@ -497,20 +516,20 @@ a.footer-link:hover {
   border-radius: 20px;
   z-index: 50;
   position: relative;
-  padding: 20px 50px;
+  padding: 20px 0;
 }
-.home-slider-overlay div {
-  padding: 0 50px 0 20px;
+.home-slider-overlay .home-slider-overlay-card {
+  padding: 0 30px;
 }
-.home-slider-overlay div a {
+.home-slider-overlay .home-slider-overlay-card a {
   color: #0E272D;
   text-decoration: none;
   transition: all 2s;
 }
-.home-slider-overlay div:hover a {
+.home-slider-overlay .home-slider-overlay-card:hover a {
   color: #57C988;
 }
-.home-slider-overlay div:nth-child(2) {
+.home-slider-overlay .home-slider-overlay-card:nth-child(2) {
   border-left: 3px solid #EDF4F4;
   border-right: 3px solid #EDF4F4;
 }

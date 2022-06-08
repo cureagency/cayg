@@ -1,14 +1,19 @@
-<div class="container-fluid">
+<div class="container-fluid" >
 	<div class="container">
 		<div class="row mt-5 mb-5">
-			<div class="col-lg-1">
-			</div>		
-			<div class="col-lg-7">
-				<h4 class="green-text mb-2"><?php the_sub_field('overline'); ?></h4>
-				<h1 class="navy-text mb-2"><?php the_sub_field('header'); ?></h1>
-			    <p class="navy-text mb-4"><?php the_sub_field('paragraph'); ?></p>
+			<div class="col-lg-6">
+				<div class="row">
+    				<div class="col-lg-1">
+	        			<p class="green-text"><i class="fa-solid fa-dash"></i></p>
+	        		</div>
+	         		<div class="col-lg-11">
+						<h4 class="green-text mb-2"><?php the_sub_field('overline'); ?></h4>
+						<h1 class="navy-text mb-2"><?php the_sub_field('header'); ?></h1>
+					    <p class="navy-text mb-4"><?php the_sub_field('paragraph'); ?></p>
+					</div>
+				</div>
 			</div>
-			<div class="col-lg-4">
+			<div class="col-lg-6">
 			</div>
 		</div>
 	</div>
@@ -16,7 +21,7 @@
 	<div class="container bg-lightblue border-radius pt-5 pb-5 mt-5 top-z-index">
 		<div class="row">
 			<div class="col-lg-12 center-text">
-				<h4 class="navy-text">External & Prior Learning</h4>
+				<h4 class="navy-text"><?php the_sub_field('image_header'); ?></h4>
 			</div>
 		</div>
 		<div class="row home-framework-card-wrap">
@@ -33,10 +38,15 @@
 
 	<div class="container">
 		<div class="row mt-5 pt-5">
-			<div class="col-lg-1">
-			</div>		
-			<div class="col-lg-7">
-				<h4 class="green-text mb-2"><?php the_sub_field('overline'); ?></h4>
+			<div class="col-lg-8">
+				<div class="row">
+    				<div class="col-lg-1">
+	        			<p class="green-text"><i class="fa-solid fa-dash"></i></p>
+	        		</div>
+	        		<div class="col-lg-1">
+						<h4 class="green-text mb-2"><?php the_sub_field('overline'); ?></h4>
+					</div>
+				</div>
 			</div>
 			<div class="col-lg-4">
 			</div>

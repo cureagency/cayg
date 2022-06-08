@@ -38,6 +38,26 @@
 	}	
 }
 
+.lightblue-button {
+	padding: 5px 25px;
+	background-color: $lightblue;
+	border-radius: 5px;
+	border: 1px solid $lightblue;
+	color:$navy !important;
+	text-decoration: none;
+	display: inline-block;
+	font-weight: 600;
+	font-size: 14px;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	transition: all 1s;
+	&:hover {
+		background-color: $navy;
+		border: 1px solid $navy;
+		color: $lightblue !important;
+	}	
+}
+
 .nobg-blue-button {
 	padding: 5px 25px;
 	border-radius: 5px;
@@ -50,8 +70,7 @@
 	text-transform: uppercase;
 	transition: all 1s;
 	&:hover {
-		color: white !important;
-		opacity: 0.3;
+		color: $navy !important;
 	}	
 }
 

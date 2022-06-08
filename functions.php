@@ -156,6 +156,12 @@ function cure_scripts() {
 }
 add_action( 'wp_enqueue_scripts', 'cure_scripts' );
 
+if( function_exists('acf_add_options_page') ) {
+	
+	acf_add_options_page();
+	
+}
+
 /**
  * Implement the Custom Header feature.
  */

@@ -400,6 +400,25 @@
                             "new_lines": ""
                         },
                         {
+                            "key": "field_62a0e8de8e909",
+                            "label": "Cards Header",
+                            "name": "cards_header",
+                            "type": "text",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "maxlength": ""
+                        },
+                        {
                             "key": "field_629d759760b92",
                             "label": "Card",
                             "name": "card",
@@ -694,6 +713,30 @@
                             "maxlength": "",
                             "rows": "",
                             "new_lines": ""
+                        },
+                        {
+                            "key": "field_62a0e8f58e90a",
+                            "label": "Image Header",
+                            "name": "image_header",
+                            "type": "image",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "return_format": "url",
+                            "preview_size": "medium",
+                            "library": "all",
+                            "min_width": "",
+                            "min_height": "",
+                            "min_size": "",
+                            "max_width": "",
+                            "max_height": "",
+                            "max_size": "",
+                            "mime_types": ""
                         },
                         {
                             "key": "field_629e4147517b3",
@@ -1242,6 +1285,30 @@
                                     "placeholder": ""
                                 }
                             ]
+                        },
+                        {
+                            "key": "field_62a0f44414fbd",
+                            "label": "BG Image",
+                            "name": "bg_image",
+                            "type": "image",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "return_format": "url",
+                            "preview_size": "medium",
+                            "library": "all",
+                            "min_width": "",
+                            "min_height": "",
+                            "min_size": "",
+                            "max_width": "",
+                            "max_height": "",
+                            "max_size": "",
+                            "mime_types": ""
                         }
                     ],
                     "min": "",
@@ -1767,5 +1834,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1654538583
+    "modified": 1654715477
 }
