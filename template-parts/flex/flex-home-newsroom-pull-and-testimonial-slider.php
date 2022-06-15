@@ -20,6 +20,29 @@
   				<div class="col-lg-1">
   				</div>
 		    </div>
+		    <div class="row">
+		    	<div class="col-lg-1">
+  				</div>
+		    	<div class="col-lg-10">
+		    		<div class="row newsroom-featured-posts-wrap">
+						<?php if( have_rows('newsroom_featured_posts') ): ?>
+							<?php while( have_rows('newsroom_featured_posts') ): the_row(); ?>
+								<div class="col-lg-6 mb-4">
+									<div class="newsroom-featured-posts">
+										<a href="<?php the_sub_field('link'); ?>">
+											<h4 class="green-text"><?php the_sub_field('date'); ?></h4>
+											<h2 class="mb-5"><?php the_sub_field('title'); ?></h2>
+											<h4 class="read-more-link blue-text" style="text-align: right;">Read More  <i class="fa-solid fa-angle-right"></i></h4>
+										</a>
+									</div>
+								</div>
+						    <?php endwhile; ?>
+						<?php endif; ?>	
+					</div>
+				</div>
+		    	<div class="col-lg-1">
+  				</div>
+		    </div>
 	  	</div>
 	  	<div class="col-lg-4 bg-lightblue testimonial-bg">
 		    <?php if( have_rows('testimonials') ): ?>
