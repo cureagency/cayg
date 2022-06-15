@@ -79,6 +79,20 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
   margin: 0 auto;
 }
 
+.site-footer {
+  margin-top: 50px;
+}
+.site-footer a {
+  color: #0E272D;
+  text-decoration: none;
+  transition: all 1s;
+  margin-top: 15px;
+  display: block;
+}
+.site-footer a:hover {
+  color: #EDF4F4;
+}
+
 .green-button {
   padding: 5px 25px;
   background-color: #57C988;
@@ -666,12 +680,12 @@ a.footer-link:hover {
 
 .newsroom-featured-posts-wrap {
   padding: 50px 0;
-  height: 100%;
 }
 .newsroom-featured-posts-wrap .newsroom-featured-posts {
   background-color: white;
   padding: 50px 25px;
   border-radius: 10px;
+  height: 100%;
 }
 .newsroom-featured-posts-wrap .newsroom-featured-posts a {
   color: #0E272D;
