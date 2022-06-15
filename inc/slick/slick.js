@@ -1488,6 +1488,13 @@
 
         }
 
+        if( _.slideCount < _.options.slidesToShow ) {
+        _.$slider.addClass('slick-no-slide');
+        }
+        else {
+            _.$slider.removeClass('slick-no-slide');
+        }
+
     };
 
     Slick.prototype.keyHandler = function(event) {

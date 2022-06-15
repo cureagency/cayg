@@ -79,6 +79,16 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
   margin: 0 auto;
 }
 
+.slick-no-slide .slick-track {
+  width: 100% !important;
+  text-align: center;
+}
+
+.slick-no-slide .slick-slide {
+  float: !important;
+  display: inline-block !important;
+}
+
 .site-footer {
   margin-top: 50px;
 }
