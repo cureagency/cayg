@@ -564,24 +564,6 @@ a.footer-link:hover {
   border-right: 3px solid #EDF4F4;
 }
 
-.newsroom-featured-posts-wrap {
-  padding: 50px 0;
-}
-.newsroom-featured-posts-wrap .newsroom-featured-posts {
-  background-color: white;
-  padding: 50px 25px;
-  border-radius: 10px;
-}
-.newsroom-featured-posts-wrap .newsroom-featured-posts a {
-  color: #0E272D;
-  text-decoration: none;
-}
-.newsroom-featured-posts-wrap .newsroom-featured-posts:hover {
-  background-color: #EDF4F4;
-  -webkit-box-shadow: 0px 0px 6px 5px rgba(0, 0, 0, 0.12);
-  box-shadow: 0px 0px 6px 5px rgba(0, 0, 0, 0.12);
-}
-
 .home-framework-card-wrap {
   padding: 50px;
 }
@@ -680,6 +662,25 @@ a.footer-link:hover {
   min-height: 600px;
   padding-top: 100px;
   padding-bottom: 100px;
+}
+
+.newsroom-featured-posts-wrap {
+  padding: 50px 0;
+  height: 100%;
+}
+.newsroom-featured-posts-wrap .newsroom-featured-posts {
+  background-color: white;
+  padding: 50px 25px;
+  border-radius: 10px;
+}
+.newsroom-featured-posts-wrap .newsroom-featured-posts a {
+  color: #0E272D;
+  text-decoration: none;
+}
+.newsroom-featured-posts-wrap .newsroom-featured-posts:hover {
+  background-color: #EDF4F4;
+  -webkit-box-shadow: 0px 0px 6px 5px rgba(0, 0, 0, 0.12);
+  box-shadow: 0px 0px 6px 5px rgba(0, 0, 0, 0.12);
 }
 
 /*# sourceMappingURL=output.css.map */

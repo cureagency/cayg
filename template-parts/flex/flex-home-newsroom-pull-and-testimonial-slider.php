@@ -24,7 +24,7 @@
 		    	<div class="col-lg-1">
   				</div>
 		    	<div class="col-lg-10">
-		    		<div class="row newsroom-featured-posts-wrap">
+		    		<div class="row newsroom-featured-posts-wrap row-eq-height">
 						<?php if( have_rows('newsroom_featured_posts') ): ?>
 							<?php while( have_rows('newsroom_featured_posts') ): the_row(); ?>
 								<div class="col-lg-6 mb-4">
