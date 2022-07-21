@@ -240,9 +240,23 @@ function nationaladvisoryboard_init() {
     );
  
     register_post_type( 'board', $args );
+
+    register_taxonomy( 'boardrole', array('board'), array(
+        'hierarchical' => true, 
+        'label' => 'Board Role', 
+        'singular_label' => 'Board Role', 
+        'rewrite' => array( 'slug' => 'board-role', 'with_front'=> false )
+        )
+    );
+
+    register_taxonomy_for_object_type( 'boardrole', 'work' ); // Better be safe than sorry
+
 }
  
 add_action( 'init', 'nationaladvisoryboard_init' );
+
+
+
 
 /**
  * Register a custom post type called "CAYG Team".
@@ -294,7 +308,17 @@ function caygteam_init() {
     );
  
     register_post_type( 'team', $args );
+
+    register_taxonomy( 'teamrole', array('team'), array(
+        'hierarchical' => true, 
+        'label' => 'Team Role', 
+        'singular_label' => 'Team Role', 
+        'rewrite' => array( 'slug' => 'team-role', 'with_front'=> false )
+        )
+    );
+
+    register_taxonomy_for_object_type( 'teamrole', 'work' ); // Better be safe than sorry
 }
- 
+
 add_action( 'init', 'caygteam_init' );
 
