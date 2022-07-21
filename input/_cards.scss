@@ -1,0 +1,10 @@
+.team-card {
+	border: 1px solid $grayblue;
+	border-radius: 15px;
+	.team-card-image {
+		height: 250px;
+		width: 100%;
+		display: block;
+		background-color: $grayblue;
+	}
+}

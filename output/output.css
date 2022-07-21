@@ -309,6 +309,15 @@ a.footer-link:hover {
   transition: all 2s;
 }
 
+.hyphenate {
+  word-break: break-word;
+  -webkit-hyphens: auto;
+  -moz-hyphens: auto;
+  -ms-hyphens: auto;
+  -o-hyphens: auto;
+  hyphens: auto;
+}
+
 .slider-wrap {
   width: 100%;
 }
@@ -606,6 +615,10 @@ a.footer-link:hover {
   background-color: #EDF4F4;
 }
 
+.grayblue-top-border {
+  border-top: 3px solid #CAD6D6;
+}
+
 .large-topandbottom-padding {
   padding-top: 100px;
   padding-bottom: 100px;
@@ -682,6 +695,17 @@ a.footer-link:hover {
 
 .small-bottom-margin {
   margin-bottom: 25px;
+}
+
+.team-card {
+  border: 1px solid #CAD6D6;
+  border-radius: 15px;
+}
+.team-card .team-card-image {
+  height: 250px;
+  width: 100%;
+  display: block;
+  background-color: #CAD6D6;
 }
 
 .home-slider-slide {

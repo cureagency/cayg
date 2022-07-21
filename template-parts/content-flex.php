@@ -85,6 +85,10 @@
 
 			        	get_template_part( 'template-parts/flex/flex-national-advisory-board-full-pull' );
 
+			        elseif( get_row_layout() == 'team_full_pull' ):
+
+			        	get_template_part( 'template-parts/flex/flex-team-full-pull' );
+
 			        elseif( get_row_layout() == '3_calls_to_action' ): 
 
 			        	get_template_part( 'template-parts/flex/flex-3-col-cta' );

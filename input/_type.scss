@@ -50,6 +50,15 @@ transition: all 1s;
 	transition: all 2s;
 }
 
+.hyphenate {
+	word-break: break-word;
+	-webkit-hyphens: auto;
+	-moz-hyphens: auto;
+	-ms-hyphens: auto;
+	-o-hyphens: auto;
+	hyphens: auto;
+}
+
 .slider-wrap {
 	width: 100%;
 }

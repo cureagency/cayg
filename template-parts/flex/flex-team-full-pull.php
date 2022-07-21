@@ -4,7 +4,7 @@
 
 		<?php 
 		    query_posts(array( 
-		        'post_type' => 'board',
+		        'post_type' => 'team',
 		        'showposts' => -1,
 		        'orderby'=>'title',
 		        'order'=>'ASC'
