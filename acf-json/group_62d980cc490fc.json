@@ -3,6 +3,25 @@
     "title": "Newsletter",
     "fields": [
         {
+            "key": "field_62d98e8eb0657",
+            "label": "Overview",
+            "name": "overview",
+            "type": "wysiwyg",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "tabs": "all",
+            "toolbar": "full",
+            "media_upload": 1,
+            "delay": 0
+        },
+        {
             "key": "field_62d980d314a1d",
             "label": "Link",
             "name": "link",
@@ -56,5 +75,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1658421489
+    "modified": 1658424987
 }
