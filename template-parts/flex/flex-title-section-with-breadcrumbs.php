@@ -1,4 +1,4 @@
-<div class="container-fluid pt-5 pb-5 bg-navy">
+<div class="container-fluid pt-5 pb-5 bg-navy background-image" style="background-image:url('<?php echo esc_url(get_sub_field('background_image')['url']); ?>');">
 	<div class="container">
 		<div class="row">
 	  		<div class="col-lg-6">
