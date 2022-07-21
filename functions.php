@@ -322,3 +322,123 @@ function caygteam_init() {
 
 add_action( 'init', 'caygteam_init' );
 
+
+/**
+ * Register a custom post type called "Tools and Resources".
+ *
+ * @see get_post_type_labels() for label keys.
+ */
+function toolsandresources_init() {
+    $labels = array(
+        'name'                  => _x( 'Tools and Resources', 'Post type general name', 'textdomain' ),
+        'singular_name'         => _x( 'Tool or Resource', 'Post type singular name', 'textdomain' ),
+        'menu_name'             => _x( 'Tools and Resources', 'Admin Menu text', 'textdomain' ),
+        'name_admin_bar'        => _x( 'Tool or Resource', 'Add New on Toolbar', 'textdomain' ),
+        'add_new'               => __( 'Add New', 'textdomain' ),
+        'add_new_item'          => __( 'Add New Tool or Resource', 'textdomain' ),
+        'new_item'              => __( 'New Tool or Resource', 'textdomain' ),
+        'edit_item'             => __( 'Edit Tool or Resource', 'textdomain' ),
+        'view_item'             => __( 'View Tool or Resource', 'textdomain' ),
+        'all_items'             => __( 'All Tools and Resources', 'textdomain' ),
+        'search_items'          => __( 'Search Tools and Resources', 'textdomain' ),
+        'parent_item_colon'     => __( 'Parent Tool or Resource:', 'textdomain' ),
+        'not_found'             => __( 'No Tools and Resources found.', 'textdomain' ),
+        'not_found_in_trash'    => __( 'No Tools and Resources found in Trash.', 'textdomain' ),
+        'featured_image'        => _x( 'Tool or Resource Image', 'Overrides the “Featured Image” phrase for this post type. Added in 4.3', 'textdomain' ),
+        'set_featured_image'    => _x( 'Set Tool or Resource image', 'Overrides the “Set featured image” phrase for this post type. Added in 4.3', 'textdomain' ),
+        'remove_featured_image' => _x( 'Remove Tool or Resource image', 'Overrides the “Remove featured image” phrase for this post type. Added in 4.3', 'textdomain' ),
+        'use_featured_image'    => _x( 'Use as Tool or Resource image', 'Overrides the “Use as featured image” phrase for this post type. Added in 4.3', 'textdomain' ),
+        'archives'              => _x( 'Tool or Resource archives', 'The post type archive label used in nav menus. Default “Post Archives”. Added in 4.4', 'textdomain' ),
+        'insert_into_item'      => _x( 'Insert into Tool or Resource', 'Overrides the “Insert into post”/”Insert into page” phrase (used when inserting media into a post). Added in 4.4', 'textdomain' ),
+        'uploaded_to_this_item' => _x( 'Uploaded to this Tool or Resource', 'Overrides the “Uploaded to this post”/”Uploaded to this page” phrase (used when viewing media attached to a post). Added in 4.4', 'textdomain' ),
+        'filter_items_list'     => _x( 'Filter Tools and Resources list', 'Screen reader text for the filter links heading on the post type listing screen. Default “Filter posts list”/”Filter pages list”. Added in 4.4', 'textdomain' ),
+        'items_list_navigation' => _x( 'Tools and Resources list navigation', 'Screen reader text for the pagination heading on the post type listing screen. Default “Posts list navigation”/”Pages list navigation”. Added in 4.4', 'textdomain' ),
+        'items_list'            => _x( 'Tools and Resources list', 'Screen reader text for the items list heading on the post type listing screen. Default “Posts list”/”Pages list”. Added in 4.4', 'textdomain' ),
+    );
+ 
+    $args = array(
+        'labels'             => $labels,
+        'public'             => true,
+        'publicly_queryable' => true,
+        'show_ui'            => true,
+        'show_in_menu'       => true,
+        'query_var'          => true,
+        'rewrite'            => array( 'slug' => 'toolsandresources' ),
+        'capability_type'    => 'post',
+        'menu_icon'    => 'dashicons-admin-tools',
+        'has_archive'        => true,
+        'hierarchical'       => false,
+        'menu_position'      => null,
+        'supports'           => array( 'title', 'thumbnail' ),
+    );
+ 
+    register_post_type( 'toolsandresources', $args );
+
+    register_taxonomy( 'types', array('toolsandresources'), array(
+        'hierarchical' => true, 
+        'label' => 'Type', 
+        'singular_label' => 'Type', 
+        'rewrite' => array( 'slug' => 'type', 'with_front'=> false )
+        )
+    );
+
+    register_taxonomy_for_object_type( 'types', 'work' ); // Better be safe than sorry
+}
+
+add_action( 'init', 'toolsandresources_init' );
+
+
+/**
+ * Register a custom post type called "Workgroups".
+ *
+ * @see get_post_type_labels() for label keys.
+ */
+function workgroups_init() {
+    $labels = array(
+        'name'                  => _x( 'Workgroups', 'Post type general name', 'textdomain' ),
+        'singular_name'         => _x( 'Workgroup', 'Post type singular name', 'textdomain' ),
+        'menu_name'             => _x( 'Workgroups', 'Admin Menu text', 'textdomain' ),
+        'name_admin_bar'        => _x( 'Workgroup', 'Add New on Toolbar', 'textdomain' ),
+        'add_new'               => __( 'Add New', 'textdomain' ),
+        'add_new_item'          => __( 'Add New Workgroup', 'textdomain' ),
+        'new_item'              => __( 'New Workgroup', 'textdomain' ),
+        'edit_item'             => __( 'Edit Workgroup', 'textdomain' ),
+        'view_item'             => __( 'View Workgroup', 'textdomain' ),
+        'all_items'             => __( 'All Workgroups', 'textdomain' ),
+        'search_items'          => __( 'Search Workgroups', 'textdomain' ),
+        'parent_item_colon'     => __( 'Parent Workgroup:', 'textdomain' ),
+        'not_found'             => __( 'No Workgroups found.', 'textdomain' ),
+        'not_found_in_trash'    => __( 'No Workgroups found in Trash.', 'textdomain' ),
+        'featured_image'        => _x( 'Workgroup Image', 'Overrides the “Featured Image” phrase for this post type. Added in 4.3', 'textdomain' ),
+        'set_featured_image'    => _x( 'Set Workgroup image', 'Overrides the “Set featured image” phrase for this post type. Added in 4.3', 'textdomain' ),
+        'remove_featured_image' => _x( 'Remove Workgroup image', 'Overrides the “Remove featured image” phrase for this post type. Added in 4.3', 'textdomain' ),
+        'use_featured_image'    => _x( 'Use as Workgroup image', 'Overrides the “Use as featured image” phrase for this post type. Added in 4.3', 'textdomain' ),
+        'archives'              => _x( 'Workgroup archives', 'The post type archive label used in nav menus. Default “Post Archives”. Added in 4.4', 'textdomain' ),
+        'insert_into_item'      => _x( 'Insert into Workgroup', 'Overrides the “Insert into post”/”Insert into page” phrase (used when inserting media into a post). Added in 4.4', 'textdomain' ),
+        'uploaded_to_this_item' => _x( 'Uploaded to this Workgroup', 'Overrides the “Uploaded to this post”/”Uploaded to this page” phrase (used when viewing media attached to a post). Added in 4.4', 'textdomain' ),
+        'filter_items_list'     => _x( 'Filter Workgroups list', 'Screen reader text for the filter links heading on the post type listing screen. Default “Filter posts list”/”Filter pages list”. Added in 4.4', 'textdomain' ),
+        'items_list_navigation' => _x( 'Workgroups list navigation', 'Screen reader text for the pagination heading on the post type listing screen. Default “Posts list navigation”/”Pages list navigation”. Added in 4.4', 'textdomain' ),
+        'items_list'            => _x( 'Workgroups list', 'Screen reader text for the items list heading on the post type listing screen. Default “Posts list”/”Pages list”. Added in 4.4', 'textdomain' ),
+    );
+ 
+    $args = array(
+        'labels'             => $labels,
+        'public'             => true,
+        'publicly_queryable' => true,
+        'show_ui'            => true,
+        'show_in_menu'       => true,
+        'query_var'          => true,
+        'rewrite'            => array( 'slug' => 'workgroups' ),
+        'capability_type'    => 'post',
+        'menu_icon'    => 'dashicons-admin-multisite',
+        'has_archive'        => true,
+        'hierarchical'       => false,
+        'menu_position'      => null,
+        'supports'           => array( 'title' ),
+    );
+ 
+    register_post_type( 'workgroups', $args );
+}
+
+add_action( 'init', 'workgroups_init' );
+

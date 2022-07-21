@@ -1,11 +1,11 @@
 {
-    "key": "group_62d9504653576",
-    "title": "National Advisory Board",
+    "key": "group_62d9711eb0c8b",
+    "title": "Workgroup",
     "fields": [
         {
-            "key": "field_62d9504dd4b55",
-            "label": "Bio",
-            "name": "bio",
+            "key": "field_62d9712690481",
+            "label": "Descriptions \/ Charge",
+            "name": "descriptions_charge",
             "type": "wysiwyg",
             "instructions": "",
             "required": 0,
@@ -20,24 +20,6 @@
             "toolbar": "full",
             "media_upload": 1,
             "delay": 0
-        },
-        {
-            "key": "field_62d951add4b56",
-            "label": "Email",
-            "name": "email",
-            "type": "email",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "default_value": "",
-            "placeholder": "",
-            "prepend": "",
-            "append": ""
         }
     ],
     "location": [
@@ -45,7 +27,7 @@
             {
                 "param": "post_type",
                 "operator": "==",
-                "value": "board"
+                "value": "workgroups"
             }
         ]
     ],
@@ -58,5 +40,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1658416006
+    "modified": 1658417469
 }
