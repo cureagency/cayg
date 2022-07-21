@@ -236,7 +236,7 @@ function nationaladvisoryboard_init() {
         'has_archive'        => true,
         'hierarchical'       => false,
         'menu_position'      => null,
-        'supports'           => array( 'title' ),
+        'supports'           => array( 'title', 'thumbnail' ),
     );
  
     register_post_type( 'board', $args );
