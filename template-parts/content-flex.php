@@ -65,6 +65,10 @@
 
 				        get_template_part( 'template-parts/flex/flex-2-column-cta' );
 
+				    elseif( get_row_layout() == '2_column_text_with_fluid_width_image' ):
+
+				        get_template_part( 'template-parts/flex/flex-2-column-text-with-fluid-width-image' );
+
 				    elseif( get_row_layout() == '3_column_wysiwyg' ):
 
 				        get_template_part( 'template-parts/flex/flex-3-column-wysiwyg' );
