@@ -4,6 +4,16 @@
 	padding-bottom: $large;
 }
 
+.medium-topandbottom-padding {
+	padding-top: $medium;
+	padding-bottom: $medium;
+}
+
+.small-topandbottom-padding {
+	padding-top: $small;
+	padding-bottom: $small;
+}
+
 .large-top-padding {
 	padding-top:  $large;
 }
@@ -30,8 +40,18 @@
 
 // margins
 .large-topandbottom-margin {
-	padding-margin: $large;
-	padding-margin: $large;
+	margin-top: $large;
+	margin-bottom: $large;
+}
+
+.medium-topandbottom-margin {
+	margin-top: $medium;
+	margin-bottom: $medium;
+}
+
+.small-topandbottom-margin {
+	margin-top: $small;
+	margin-bottom: $small;
 }
 
 .large-top-margin {

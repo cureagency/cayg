@@ -61,6 +61,10 @@
 
 				        get_template_part( 'template-parts/flex/flex-2-column-wysiwyg' );
 
+				    elseif( get_row_layout() == '2_column_cta' ):
+
+				        get_template_part( 'template-parts/flex/flex-2-column-cta' );
+
 				    elseif( get_row_layout() == '3_column_wysiwyg' ):
 
 				        get_template_part( 'template-parts/flex/flex-3-column-wysiwyg' );
