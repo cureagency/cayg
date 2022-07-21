@@ -189,3 +189,58 @@ if ( defined( 'JETPACK__VERSION' ) ) {
 	require get_template_directory() . '/inc/jetpack.php';
 }
 
+
+/**
+ * Register a custom post type called "National Advisory Board".
+ *
+ * @see get_post_type_labels() for label keys.
+ */
+function nationaladvisoryboard_init() {
+    $labels = array(
+        'name'                  => _x( 'National Advisory Board', 'Post type general name', 'textdomain' ),
+        'singular_name'         => _x( 'National Advisory Board Member', 'Post type singular name', 'textdomain' ),
+        'menu_name'             => _x( 'National Advisory Board', 'Admin Menu text', 'textdomain' ),
+        'name_admin_bar'        => _x( 'National Advisory Board Member', 'Add New on Toolbar', 'textdomain' ),
+        'add_new'               => __( 'Add New', 'textdomain' ),
+        'add_new_item'          => __( 'Add New National Advisory Board Member', 'textdomain' ),
+        'new_item'              => __( 'New National Advisory Board Member', 'textdomain' ),
+        'edit_item'             => __( 'Edit National Advisory Board Member', 'textdomain' ),
+        'view_item'             => __( 'View National Advisory Board Member', 'textdomain' ),
+        'all_items'             => __( 'All National Advisory Board Members', 'textdomain' ),
+        'search_items'          => __( 'Search National Advisory Board Members', 'textdomain' ),
+        'parent_item_colon'     => __( 'Parent National Advisory Board Member:', 'textdomain' ),
+        'not_found'             => __( 'No National Advisory Board Members found.', 'textdomain' ),
+        'not_found_in_trash'    => __( 'No National Advisory Board Members found in Trash.', 'textdomain' ),
+        'featured_image'        => _x( 'National Advisory Board Member Image', 'Overrides the “Featured Image” phrase for this post type. Added in 4.3', 'textdomain' ),
+        'set_featured_image'    => _x( 'Set National Advisory Board Member image', 'Overrides the “Set featured image” phrase for this post type. Added in 4.3', 'textdomain' ),
+        'remove_featured_image' => _x( 'Remove National Advisory Board Member image', 'Overrides the “Remove featured image” phrase for this post type. Added in 4.3', 'textdomain' ),
+        'use_featured_image'    => _x( 'Use as National Advisory Board Member image', 'Overrides the “Use as featured image” phrase for this post type. Added in 4.3', 'textdomain' ),
+        'archives'              => _x( 'National Advisory Board Member archives', 'The post type archive label used in nav menus. Default “Post Archives”. Added in 4.4', 'textdomain' ),
+        'insert_into_item'      => _x( 'Insert into National Advisory Board Member', 'Overrides the “Insert into post”/”Insert into page” phrase (used when inserting media into a post). Added in 4.4', 'textdomain' ),
+        'uploaded_to_this_item' => _x( 'Uploaded to this National Advisory Board Member', 'Overrides the “Uploaded to this post”/”Uploaded to this page” phrase (used when viewing media attached to a post). Added in 4.4', 'textdomain' ),
+        'filter_items_list'     => _x( 'Filter National Advisory Board Members list', 'Screen reader text for the filter links heading on the post type listing screen. Default “Filter posts list”/”Filter pages list”. Added in 4.4', 'textdomain' ),
+        'items_list_navigation' => _x( 'National Advisory Board Members list navigation', 'Screen reader text for the pagination heading on the post type listing screen. Default “Posts list navigation”/”Pages list navigation”. Added in 4.4', 'textdomain' ),
+        'items_list'            => _x( 'National Advisory Board Members list', 'Screen reader text for the items list heading on the post type listing screen. Default “Posts list”/”Pages list”. Added in 4.4', 'textdomain' ),
+    );
+ 
+    $args = array(
+        'labels'             => $labels,
+        'public'             => true,
+        'publicly_queryable' => true,
+        'show_ui'            => true,
+        'show_in_menu'       => true,
+        'query_var'          => true,
+        'rewrite'            => array( 'slug' => 'board' ),
+        'capability_type'    => 'post',
+        'menu_icon'    => 'dashicons-admin-users',
+        'has_archive'        => true,
+        'hierarchical'       => false,
+        'menu_position'      => null,
+        'supports'           => array( 'title' ),
+    );
+ 
+    register_post_type( 'board', $args );
+}
+ 
+add_action( 'init', 'nationaladvisoryboard_init' );
+
