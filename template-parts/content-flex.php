@@ -25,11 +25,9 @@
 
 			        	get_template_part( 'template-parts/flex/flex-home-slider' );
 
-
 				    elseif( get_row_layout() == 'home_cards_angle_section' ):
 
 				        get_template_part( 'template-parts/flex/flex-home-cards-angle-section' );
-
 
 				    elseif( get_row_layout() == 'home_image_angle_section' ):
 
@@ -42,8 +40,7 @@
 				    elseif( get_row_layout() == 'supporting_organizations_slider' ):
 
 				        get_template_part( 'template-parts/flex/flex-supporting-organizations-slider' );
-
-				    
+    
 				    elseif( get_row_layout() == 'cta_block_on_angle_bg' ):
 
 				        get_template_part( 'template-parts/flex/flex-cta-block-on-angle-bg' );
@@ -51,6 +48,10 @@
 				    elseif( get_row_layout() == 'title_section_with_breadcrumbs' ):
 
 				        get_template_part( 'template-parts/flex/flex-title-section-with-breadcrumbs' );
+
+				    elseif( get_row_layout() == 'title_section' ):
+
+				        get_template_part( 'template-parts/flex/flex-title-section' );
 
 				    elseif( get_row_layout() == '1_column_wysiwyg' ):
 
@@ -64,16 +65,13 @@
 
 				        get_template_part( 'template-parts/flex/flex-3-column-wysiwyg' );
 
-
 				    elseif( get_row_layout() == '2_column_image_and_cta_text' ):
 
 				        get_template_part( 'template-parts/flex/flex-2-column-image-and-cta-text' );
 
-
 			        elseif( get_row_layout() == 'post_slider' ):
 
 			        	get_template_part( 'template-parts/flex/flex-header-post-slider' );
-
 
 			        elseif( get_row_layout() == '3_calls_to_action' ): 
 

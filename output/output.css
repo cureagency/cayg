@@ -63,22 +63,6 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
   background-size: contain !important;
 }
 
-.background-image {
-  background-size: cover;
-  background-position: center center;
-  background-repeat: no-repeat;
-}
-
-.imageincircle {
-  width: 200px;
-  height: 200px;
-  object-fit: contain;
-  border-radius: 50%;
-  border: 3px solid white;
-  display: block;
-  margin: 0 auto;
-}
-
 .slick-no-slide .slick-track {
   width: 100% !important;
   text-align: center;
@@ -533,6 +517,96 @@ a.footer-link:hover {
     left: 5px !important;
   }
 }
+.background-image {
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.imageincircle {
+  width: 200px;
+  height: 200px;
+  object-fit: contain;
+  border-radius: 50%;
+  border: 3px solid white;
+  display: block;
+  margin: 0 auto;
+}
+
+.vertical-green-line {
+  height: 90px;
+  width: 3px;
+  display: block;
+  margin: 0 auto -25px;
+  background-color: #57C988;
+}
+
+.horizontal-green-line {
+  height: 3px;
+  width: 100%;
+  display: block;
+  margin: 0;
+  background-color: #57C988;
+}
+
+.large-topandbottom-padding {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.large-top-padding {
+  padding-top: 100px;
+}
+
+.medium-top-padding {
+  padding-top: 75px;
+}
+
+.small-top-padding {
+  padding-top: 25px;
+}
+
+.large-bottom-padding {
+  padding-bottom: 100px;
+}
+
+.medium-bottom-padding {
+  padding-bottom: 75px;
+}
+
+.small-bottom-padding {
+  padding-bottom: 25px;
+}
+
+.large-topandbottom-margin {
+  padding-margin: 100px;
+  padding-margin: 100px;
+}
+
+.large-top-margin {
+  margin-top: 100px;
+}
+
+.medium-top-margin {
+  margin-top: 75px;
+}
+
+.small-top-margin {
+  margin-top: 25px;
+}
+
+.large-bottom-margin {
+  margin-bottom: 100px;
+}
+
+.medium-bottom-margin {
+  margin-bottom: 75px;
+}
+
+.small-bottom-margin {
+  margin-bottom: 25px;
+}
+
 .home-slider-slide {
   height: calc(100vh - 120px);
   width: 100%;
