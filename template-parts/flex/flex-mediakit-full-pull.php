@@ -12,7 +12,7 @@
                 }
 
                 $custom_query_args = array(
-                    'post_type' => 'inthenews', 
+                    'post_type' => 'mediakit', 
                     'posts_per_page' => 20,
                     'paged' => $paged,
                     'post_status' => 'publish',

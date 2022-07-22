@@ -52,8 +52,7 @@
   				<div class="col-lg-1">
   				</div>
   				<div class="col-lg-7">
-					<h4> &nbsp; </h4>
-			    	<h1><?php the_sub_field('inthenews_title'); ?></h1>
+			    	<h4><?php the_sub_field('inthenews_title'); ?></h1>
 			    </div>
 			    <div class="col-lg-3 align-self-end" style="text-align:right;">
 			        <p>
@@ -67,7 +66,7 @@
   				<div class="col-lg-1">
   				</div>
 		    </div>
-		    <div class="row">
+		    <div class="row" style="padding-top: 50px;">
 		    	<div class="col-lg-1">
   				</div>
   				<div class="col-lg-10">

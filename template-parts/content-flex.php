@@ -105,6 +105,18 @@
 
 			        	get_template_part( 'template-parts/flex/flex-inthenews-full-pull' );
 
+			        elseif( get_row_layout() == 'mediakit_full_pull' ):
+
+			        	get_template_part( 'template-parts/flex/flex-mediakit-full-pull' );
+
+			        elseif( get_row_layout() == 'newsletter_full_pull' ):
+
+			        	get_template_part( 'template-parts/flex/flex-newsletter-full-pull' );
+
+			        elseif( get_row_layout() == 'pressreleases_full_pull' ):
+
+			        	get_template_part( 'template-parts/flex/pressreleases-newsletter-full-pull' );
+
 			        elseif( get_row_layout() == '3_calls_to_action' ): 
 
 			        	get_template_part( 'template-parts/flex/flex-3-col-cta' );
