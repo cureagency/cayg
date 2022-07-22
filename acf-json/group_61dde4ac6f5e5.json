@@ -1016,7 +1016,7 @@
                 "layout_629e031937fcd": {
                     "key": "layout_629e031937fcd",
                     "name": "home_newsroom_pull_and_testimonial_slider",
-                    "label": "Home - Newsroom Pull and Testimonial Slider",
+                    "label": "Home - Blog and Newsroom",
                     "display": "block",
                     "sub_fields": [
                         {
@@ -1110,10 +1110,10 @@
                             ]
                         },
                         {
-                            "key": "field_629e035037fce",
-                            "label": "Testimonials",
-                            "name": "testimonials",
-                            "type": "repeater",
+                            "key": "field_62daa88b8eb21",
+                            "label": "In the News Overline",
+                            "name": "inthenews_overline",
+                            "type": "text",
                             "instructions": "",
                             "required": 0,
                             "conditional_logic": 0,
@@ -1122,81 +1122,17 @@
                                 "class": "",
                                 "id": ""
                             },
-                            "collapsed": "",
-                            "min": 0,
-                            "max": 0,
-                            "layout": "table",
-                            "button_label": "",
-                            "sub_fields": [
-                                {
-                                    "key": "field_629e036237fcf",
-                                    "label": "Headshot",
-                                    "name": "headshot",
-                                    "type": "image",
-                                    "instructions": "",
-                                    "required": 0,
-                                    "conditional_logic": 0,
-                                    "wrapper": {
-                                        "width": "",
-                                        "class": "",
-                                        "id": ""
-                                    },
-                                    "return_format": "url",
-                                    "preview_size": "medium",
-                                    "library": "all",
-                                    "min_width": "",
-                                    "min_height": "",
-                                    "min_size": "",
-                                    "max_width": "",
-                                    "max_height": "",
-                                    "max_size": "",
-                                    "mime_types": ""
-                                },
-                                {
-                                    "key": "field_629e037037fd0",
-                                    "label": "Quote",
-                                    "name": "quote",
-                                    "type": "textarea",
-                                    "instructions": "",
-                                    "required": 0,
-                                    "conditional_logic": 0,
-                                    "wrapper": {
-                                        "width": "",
-                                        "class": "",
-                                        "id": ""
-                                    },
-                                    "default_value": "",
-                                    "placeholder": "",
-                                    "maxlength": "",
-                                    "rows": "",
-                                    "new_lines": ""
-                                },
-                                {
-                                    "key": "field_629e037a37fd1",
-                                    "label": "Attribution",
-                                    "name": "attribution",
-                                    "type": "text",
-                                    "instructions": "",
-                                    "required": 0,
-                                    "conditional_logic": 0,
-                                    "wrapper": {
-                                        "width": "",
-                                        "class": "",
-                                        "id": ""
-                                    },
-                                    "default_value": "",
-                                    "placeholder": "",
-                                    "prepend": "",
-                                    "append": "",
-                                    "maxlength": ""
-                                }
-                            ]
+                            "default_value": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "maxlength": ""
                         },
                         {
-                            "key": "field_62aa040c010a7",
-                            "label": "Newsroom Featured Posts",
-                            "name": "newsroom_featured_posts",
-                            "type": "repeater",
+                            "key": "field_62daa89f8eb22",
+                            "label": "In The News Title",
+                            "name": "inthenews_title",
+                            "type": "text",
                             "instructions": "",
                             "required": 0,
                             "conditional_logic": 0,
@@ -1205,16 +1141,31 @@
                                 "class": "",
                                 "id": ""
                             },
-                            "collapsed": "",
-                            "min": 0,
-                            "max": 2,
-                            "layout": "table",
-                            "button_label": "",
+                            "default_value": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "maxlength": ""
+                        },
+                        {
+                            "key": "field_62daa8b18eb23",
+                            "label": "In The News Button",
+                            "name": "inthenews_button",
+                            "type": "group",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "layout": "block",
                             "sub_fields": [
                                 {
-                                    "key": "field_62aa042f010a8",
-                                    "label": "Date",
-                                    "name": "date",
+                                    "key": "field_62daa8b18eb24",
+                                    "label": "Button Text",
+                                    "name": "button_text",
                                     "type": "text",
                                     "instructions": "",
                                     "required": 0,
@@ -1231,28 +1182,9 @@
                                     "maxlength": ""
                                 },
                                 {
-                                    "key": "field_62aa0436010a9",
-                                    "label": "Title",
-                                    "name": "title",
-                                    "type": "text",
-                                    "instructions": "",
-                                    "required": 0,
-                                    "conditional_logic": 0,
-                                    "wrapper": {
-                                        "width": "",
-                                        "class": "",
-                                        "id": ""
-                                    },
-                                    "default_value": "",
-                                    "placeholder": "",
-                                    "prepend": "",
-                                    "append": "",
-                                    "maxlength": ""
-                                },
-                                {
-                                    "key": "field_62aa043e010aa",
-                                    "label": "Link",
-                                    "name": "link",
+                                    "key": "field_62daa8b18eb25",
+                                    "label": "Button URL",
+                                    "name": "button_url",
                                     "type": "url",
                                     "instructions": "",
                                     "required": 0,
@@ -3937,5 +3869,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1658495722
+    "modified": 1658497225
 }

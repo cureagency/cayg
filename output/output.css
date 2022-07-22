@@ -884,6 +884,14 @@ a.footer-link:hover {
   border-right: 3px solid #EDF4F4;
 }
 
+.inthenews-list {
+  border-top: 1px solid #CAD6D6;
+  padding-top: 25px;
+}
+.inthenews-list h3 {
+  color: #0E272D;
+}
+
 .home-framework-card-wrap {
   padding: 50px;
 }

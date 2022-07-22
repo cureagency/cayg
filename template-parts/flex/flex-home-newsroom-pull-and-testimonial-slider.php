@@ -1,6 +1,7 @@
 <div class="container-fluid pt-5 pb-5">
 	<div class="row">
-  		<div class="col-lg-8 green-gradient-bg newsroom-bg">
+
+  		<div class="col-lg-7 green-gradient-bg newsroom-bg">
   			<div class="row">
   				<div class="col-lg-1">
   				</div>
@@ -25,53 +26,69 @@
   				</div>
 		    	<div class="col-lg-10">
 		    		<div class="row newsroom-featured-posts-wrap row-eq-height">
-						<?php if( have_rows('newsroom_featured_posts') ): ?>
-							<?php while( have_rows('newsroom_featured_posts') ): the_row(); ?>
-								<div class="col-lg-6 mb-4">
-									<div class="newsroom-featured-posts">
-										<a href="<?php the_sub_field('link'); ?>">
-											<h4 class="green-text"><?php the_sub_field('date'); ?></h4>
-											<h2 class="mb-5"><?php the_sub_field('title'); ?></h2>
-											<h4 class="read-more-link blue-text" style="text-align: right;">Read More  <i class="fa-solid fa-angle-right"></i></h4>
-										</a>
-									</div>
-								</div>
-						    <?php endwhile; ?>
-						<?php endif; ?>	
+						<?php
+						    $args = array('posts_per_page' => 2);
+							$query = new WP_Query( $args );
+							while( $query->have_posts()) : $query->the_post(); ?>
+							<div class="col-lg-6 mb-4">
+					        	<div class="newsroom-featured-posts">
+									<a href="<?php the_permalink(); ?>">
+										<h4 class="green-text"><?php echo get_the_date(); ?></h4>
+										<h2 class="mb-5"><?php echo get_the_title(); ?></h2>
+										<h4 class="read-more-link blue-text" style="text-align: right;">Read More  <i class="fa-solid fa-angle-right"></i></h4>
+									</a>
+					            </div>
+							</div>
+						<?php endwhile;  wp_reset_postdata(); ?>
 					</div>
 				</div>
 		    	<div class="col-lg-1">
   				</div>
 		    </div>
 	  	</div>
-	  	<div class="col-lg-4 bg-lightblue testimonial-bg">
-		    <?php if( have_rows('testimonials') ): ?>
-		    	<div class="testimonials-slider">
-					<?php while( have_rows('testimonials') ): the_row(); ?>
-						<div class="testimonials-slide" style="padding: 0 20px;">
-							<?php if( get_sub_field('headshot') ): ?>
-							    <img class="imageincircle mb-3" src="<?php the_sub_field('headshot'); ?>" />
-							<?php endif; ?>
-							<p style="text-align: center;">"<?php the_sub_field('quote'); ?>"</p>
-			    			<p style="text-align: center;"><strong><?php the_sub_field('attribution'); ?></strong></p>
+
+	  	<div class="col-lg-5 bg-lightblue testimonial-bg">
+	  		<div class="row">
+  				<div class="col-lg-1">
+  				</div>
+  				<div class="col-lg-7">
+					<h4><?php the_sub_field('inthenews_overline'); ?></h4>
+			    	<h1><?php the_sub_field('inthenews_title'); ?></h1>
+			    </div>
+			    <div class="col-lg-3 align-self-end" style="text-align:right;">
+			        <p>
+			        	<?php if( have_rows('inthenews_button') ): ?>
+						    <?php while( have_rows('inthenews_button') ): the_row(); ?>
+						       <a class="white-border-button" href="<?php the_sub_field('button_url'); ?>"><?php the_sub_field('button_text'); ?></a>
+						    <?php endwhile; ?>
+						<?php endif; ?>	
+			        </p>
+			    </div>
+  				<div class="col-lg-1">
+  				</div>
+		    </div>
+		    <div class="row">
+		    	<div class="col-lg-1">
+  				</div>
+  				<div class="col-lg-10">
+
+					<?php
+					    $args = array('posts_per_page' => 4, 'post_type' => 'inthenews');
+						$query = new WP_Query( $args );
+						while( $query->have_posts()) : $query->the_post(); ?>
+						<div class="inthenews-list mb-4">
+							<a href="<?php the_permalink(); ?>">
+								<h4 class="green-text"><?php the_field('date'); ?></h4>
+								<h3 class="mb-5"><?php echo get_the_title(); ?></h3>
+								<h4 class="read-more-link" style="text-align: right;">Read More  <i class="fa-solid fa-angle-right"></i></h4>
+							</a>
 						</div>
-				    <?php endwhile; ?>
+					<?php endwhile;  wp_reset_postdata(); ?>
 				</div>
-			<?php endif; ?>	
+		    	<div class="col-lg-1">
+  				</div>
+			</div>
 		</div>
 
-		<script>
-			jQuery(function($){
-				$('.testimonials-slider').slick({
-				  slidesToShow: 1,
-				  slidesToScroll: 1,
-				  autoplay: true,
-				  arrows: false,
-				  dots: true,
-				  autoplaySpeed: 4000,
-				});
-			});
-		</script>
-	  	</div>
 	</div>
 </div>
