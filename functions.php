@@ -625,6 +625,60 @@ function newsletter_init() {
 
 add_action( 'init', 'newsletter_init' );
 
+/**
+ * Register a custom post type called "Press Releases".
+ *
+ * @see get_post_type_labels() for label keys.
+ */
+function pressreleases_init() {
+    $labels = array(
+        'name'                  => _x( 'Press Releases', 'Post type general name', 'textdomain' ),
+        'singular_name'         => _x( 'Press Release', 'Post type singular name', 'textdomain' ),
+        'menu_name'             => _x( 'Press Releases', 'Admin Menu text', 'textdomain' ),
+        'name_admin_bar'        => _x( 'Press Releases', 'Add New on Toolbar', 'textdomain' ),
+        'add_new'               => __( 'Add New', 'textdomain' ),
+        'add_new_item'          => __( 'Add New Press Release', 'textdomain' ),
+        'new_item'              => __( 'New Press Release', 'textdomain' ),
+        'edit_item'             => __( 'Edit Press Release', 'textdomain' ),
+        'view_item'             => __( 'View Press Release', 'textdomain' ),
+        'all_items'             => __( 'All Press Releases', 'textdomain' ),
+        'search_items'          => __( 'Search In The Press Releases', 'textdomain' ),
+        'parent_item_colon'     => __( 'Parent Press Release:', 'textdomain' ),
+        'not_found'             => __( 'No Press Releases found.', 'textdomain' ),
+        'not_found_in_trash'    => __( 'No Press Releases found in Trash.', 'textdomain' ),
+        'featured_image'        => _x( 'Press Release Image', 'Overrides the “Featured Image” phrase for this post type. Added in 4.3', 'textdomain' ),
+        'set_featured_image'    => _x( 'Set Press Release image', 'Overrides the “Set featured image” phrase for this post type. Added in 4.3', 'textdomain' ),
+        'remove_featured_image' => _x( 'Remove Press Release image', 'Overrides the “Remove featured image” phrase for this post type. Added in 4.3', 'textdomain' ),
+        'use_featured_image'    => _x( 'Use as Press Release image', 'Overrides the “Use as featured image” phrase for this post type. Added in 4.3', 'textdomain' ),
+        'archives'              => _x( 'Press Release archives', 'The post type archive label used in nav menus. Default “Post Archives”. Added in 4.4', 'textdomain' ),
+        'insert_into_item'      => _x( 'Insert into Press Release', 'Overrides the “Insert into post”/”Insert into page” phrase (used when inserting media into a post). Added in 4.4', 'textdomain' ),
+        'uploaded_to_this_item' => _x( 'Uploaded to this Press Release', 'Overrides the “Uploaded to this post”/”Uploaded to this page” phrase (used when viewing media attached to a post). Added in 4.4', 'textdomain' ),
+        'filter_items_list'     => _x( 'Filter Press Releases list', 'Screen reader text for the filter links heading on the post type listing screen. Default “Filter posts list”/”Filter pages list”. Added in 4.4', 'textdomain' ),
+        'items_list_navigation' => _x( 'Press Releases list navigation', 'Screen reader text for the pagination heading on the post type listing screen. Default “Posts list navigation”/”Pages list navigation”. Added in 4.4', 'textdomain' ),
+        'items_list'            => _x( 'Press Releases list', 'Screen reader text for the items list heading on the post type listing screen. Default “Posts list”/”Pages list”. Added in 4.4', 'textdomain' ),
+    );
+ 
+    $args = array(
+        'labels'             => $labels,
+        'public'             => true,
+        'publicly_queryable' => true,
+        'show_ui'            => true,
+        'show_in_menu'       => true,
+        'query_var'          => true,
+        'rewrite'            => array( 'slug' => 'pressreleases' ),
+        'capability_type'    => 'post',
+        'menu_icon'    => 'dashicons-admin-comments',
+        'has_archive'        => false,
+        'hierarchical'       => false,
+        'menu_position'      => null,
+        'supports'           => array( 'title', 'thumbnail' ),
+    );
+ 
+    register_post_type( 'pressreleases', $args );
+}
+
+add_action( 'init', 'pressreleases_init' );
+
 
 /**
  * Register a custom post type called "In The News".
