@@ -73,13 +73,13 @@
   				<div class="col-lg-10">
 
 					<?php
-					    $args = array('posts_per_page' => 4, 'post_type' => 'inthenews');
+					    $args = array('posts_per_page' => 3, 'post_type' => 'inthenews');
 						$query = new WP_Query( $args );
 						while( $query->have_posts()) : $query->the_post(); ?>
 						<div class="inthenews-list mb-4">
 							<a href="<?php the_permalink(); ?>">
 								<h4 class="green-text"><?php the_field('date'); ?></h4>
-								<h3 class="mb-5"><?php echo get_the_title(); ?></h3>
+								<h3><?php echo get_the_title(); ?></h3>
 								<h4 class="read-more-link" style="text-align: right;">Read More  <i class="fa-solid fa-angle-right"></i></h4>
 							</a>
 						</div>
