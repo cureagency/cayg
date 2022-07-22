@@ -33,9 +33,8 @@
                         <div class="col-lg-10">
                                 <div class="inthenews-list mb-4">
                                     <a href="<?php the_permalink(); ?>">
-                                        <h4 class="green-text"><?php the_field('date'); ?></h4>
                                         <h3><?php echo get_the_title(); ?></h3>
-                                        <h4 class="read-more-link" style="text-align: right;">Read More  <i class="fa-solid fa-angle-right"></i></h4>
+                                        <h4 class="read-more-link" style="text-align: right;">See Newsletter  <i class="fa-solid fa-angle-right"></i></h4>
                                     </a>
                                 </div>
                         </div>
@@ -49,30 +48,33 @@
 
                 <div class="row">
 
-                    <?php if ($custom_query->max_num_pages > 1) : // custom pagination  ?>
-                        <?php
-                        $orig_query = $wp_query; // fix for pagination to work
-                        $wp_query = $custom_query;
-                        ?>
-                        <nav class="prev-next-posts">
-                            <div class="prev-posts-link">
-                                <?php echo get_next_posts_link( 'Older Entries', $custom_query->max_num_pages ); ?>
-                            </div>
-                            <div class="next-posts-link">
-                                <?php echo get_previous_posts_link( 'Newer Entries' ); ?>
-                            </div>
-                        </nav>
-                        <?php
-                        $wp_query = $orig_query; // fix for pagination to work
-                        ?>
-                    <?php endif; ?>
+                    <div class="col-lg">
 
-                <?php
-                    wp_reset_postdata(); // reset the query 
-                else:
-                    echo '<p>'.__('Sorry, no posts matched your criteria.').'</p>';
-                endif;
-                ?>
+                        <?php if ($custom_query->max_num_pages > 1) : // custom pagination  ?>
+                            <?php
+                            $orig_query = $wp_query; // fix for pagination to work
+                            $wp_query = $custom_query;
+                            ?>
+                            <nav class="prev-next-posts">
+                                <div class="prev-posts-link">
+                                    <?php echo get_next_posts_link( 'Older Entries', $custom_query->max_num_pages ); ?>
+                                </div>
+                                <div class="next-posts-link">
+                                    <?php echo get_previous_posts_link( 'Newer Entries' ); ?>
+                                </div>
+                            </nav>
+                            <?php
+                            $wp_query = $orig_query; // fix for pagination to work
+                            ?>
+                        <?php endif; ?>
+
+                    <?php
+                        wp_reset_postdata(); // reset the query 
+                    else:
+                        echo '<p>'.__('Sorry, no posts matched your criteria.').'</p>';
+                    endif;
+                    ?>
+                </div>
 
         </div>
     </div>

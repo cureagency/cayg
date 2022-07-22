@@ -48,31 +48,33 @@
                     ?>
 
                 <div class="row">
+                    <div class="col-lg">
 
-                    <?php if ($custom_query->max_num_pages > 1) : // custom pagination  ?>
-                        <?php
-                        $orig_query = $wp_query; // fix for pagination to work
-                        $wp_query = $custom_query;
-                        ?>
-                        <nav class="prev-next-posts">
-                            <div class="prev-posts-link">
-                                <?php echo get_next_posts_link( 'Older Entries', $custom_query->max_num_pages ); ?>
-                            </div>
-                            <div class="next-posts-link">
-                                <?php echo get_previous_posts_link( 'Newer Entries' ); ?>
-                            </div>
-                        </nav>
-                        <?php
-                        $wp_query = $orig_query; // fix for pagination to work
-                        ?>
-                    <?php endif; ?>
+                        <?php if ($custom_query->max_num_pages > 1) : // custom pagination  ?>
+                            <?php
+                            $orig_query = $wp_query; // fix for pagination to work
+                            $wp_query = $custom_query;
+                            ?>
+                            <nav class="prev-next-posts">
+                                <div class="prev-posts-link">
+                                    <?php echo get_next_posts_link( 'Older Entries', $custom_query->max_num_pages ); ?>
+                                </div>
+                                <div class="next-posts-link">
+                                    <?php echo get_previous_posts_link( 'Newer Entries' ); ?>
+                                </div>
+                            </nav>
+                            <?php
+                            $wp_query = $orig_query; // fix for pagination to work
+                            ?>
+                        <?php endif; ?>
 
-                <?php
-                    wp_reset_postdata(); // reset the query 
-                else:
-                    echo '<p>'.__('Sorry, no posts matched your criteria.').'</p>';
-                endif;
-                ?>
+                    <?php
+                        wp_reset_postdata(); // reset the query 
+                    else:
+                        echo '<p>'.__('Sorry, no posts matched your criteria.').'</p>';
+                    endif;
+                    ?>
+                </div>
 
         </div>
     </div>
