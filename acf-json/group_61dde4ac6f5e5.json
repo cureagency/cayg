@@ -1966,6 +1966,25 @@
                             "delay": 0
                         },
                         {
+                            "key": "field_62dab3664925d",
+                            "label": "Column 2 Embed",
+                            "name": "column_2_embed",
+                            "type": "text",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "maxlength": ""
+                        },
+                        {
                             "key": "field_62d99d520c2bc",
                             "label": "Bottom Margin",
                             "name": "bottom_margin",
@@ -4093,5 +4112,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1658498414
+    "modified": 1658500050
 }
