@@ -59,7 +59,7 @@
 
 				<div class="row">
 					<div class="col-lg-6">
-						<p>Copyright 2022 CAYG</p>
+						<p>Copyright 2022 Credential As You Go</p>
 					</div>
 					<div class="col-lg-6">
 						<p style="text-align: right;">All Rights Reserved</p>
