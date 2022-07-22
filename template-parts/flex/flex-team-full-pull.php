@@ -30,6 +30,7 @@
 							<?php } else { ?>
 							   <p class="small mt-4"><?php echo wp_trim_words( get_field('bio'), 40, '...' ); ?></p>
 							<?php } ?>
+							<p><a class="green-button-justtext" onclick="bio<?php the_ID(); ?>Trigger()">Read More +</a></p>
 						</div>
 			   			<div class="col-lg-1">
 			   			</div>
@@ -38,12 +39,10 @@
 			   			<div class="col-lg-1">
 			   			</div>
 			   			<div class="col-lg-4">
-			   				<p class="small">
-			   					<a class="hyphenate team-card-email" href="mailto:<?php the_field('email'); ?>"><?php the_field('email'); ?></a>
-			   				</p>
+			   				
 			   			</div>
 			   			<div class="col-lg-6">
-							<p><a class="green-button-justtext" onclick="bio<?php the_ID(); ?>Trigger()">Read More +</a></p>
+							
 						</div>
 			   			<div class="col-lg-1">
 			   			</div>
