@@ -41,6 +41,10 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
   background-color: #EDF4F4;
 }
 
+.bg-grayblue {
+  background-color: #CAD6D6;
+}
+
 .green-gradient-bg {
   background: linear-gradient(270deg, #57C988, #368273);
   background-size: 400% 400%;
@@ -681,6 +685,10 @@ a.footer-link:hover {
   border-top: 3px solid #CAD6D6;
 }
 
+.no-padding {
+  padding: 0;
+}
+
 .large-topandbottom-padding {
   padding-top: 100px;
   padding-bottom: 100px;
@@ -771,6 +779,16 @@ a.footer-link:hover {
   margin-bottom: 25px;
 }
 
+.post, .page, .entry-content {
+  margin: 0;
+}
+
+@media (min-width: 768px) {
+  .row.equal {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
 .team-card {
   border: 1px solid #CAD6D6;
   border-radius: 15px;

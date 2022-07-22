@@ -1,4 +1,8 @@
 // padding
+.no-padding {
+	padding: 0;
+}
+
 .large-topandbottom-padding {
 	padding-top: $large;
 	padding-bottom: $large;
@@ -89,4 +93,16 @@
 
 .small-bottom-margin {
 	margin-bottom: $small;
+}
+
+// other
+.post, .page, .entry-content {
+	margin: 0;
+}
+
+@media (min-width: 768px) {
+  .row.equal {
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
