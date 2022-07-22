@@ -32,7 +32,7 @@
                         </div>
                         <div class="col-lg-10">
                                 <div class="inthenews-list mb-4">
-                                    <a href="<?php the_permalink(); ?>">
+                                    <a target="_blank" href="<?php the_field('link'); ?>">
                                         <h3><?php echo get_the_title(); ?></h3>
                                         <h4 class="read-more-link" style="text-align: right;">See Newsletter  <i class="fa-solid fa-angle-right"></i></h4>
                                     </a>
