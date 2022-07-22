@@ -11,15 +11,15 @@
 	  	</div>
 	</div>
 
-	<div class="row">
+	<div class="row row-eq-height">
 		<div class="col-lg-1">
 	  	</div>
-  		<div class="col-lg-5">
+  		<div class="col-lg-5 small-topbottomleftright-padding">
 	    <?php if( have_rows('card_1') ): ?>
 		    <?php while( have_rows('card_1') ): the_row(); ?>
-				<div class="row ">
+				<div class="row shadow-card small-topbottomleftright-padding">
 			  		<div class="col-lg-4">
-			  			<img src="<?php the_sub_field('image_or_icon'); ?>">
+			  			<img class="card-image" src="<?php the_sub_field('image_or_icon'); ?>">
 				  	</div>
 			  		<div class="col-lg-8">
 			  			<h3><?php the_sub_field('title'); ?></h3>
@@ -34,12 +34,12 @@
 		    <?php endwhile; ?>
 		<?php endif; ?>
 	  	</div>
-		<div class="col-lg-5">
+		<div class="col-lg-5 small-topbottomleftright-padding">
 	    <?php if( have_rows('card_2') ): ?>
 		    <?php while( have_rows('card_2') ): the_row(); ?>
-				<div class="row ">
+				<div class="row shadow-card small-topbottomleftright-padding">
 			  		<div class="col-lg-4">
-			  			<img src="<?php the_sub_field('image_or_icon'); ?>">
+			  			<img class="card-image" src="<?php the_sub_field('image_or_icon'); ?>">
 				  	</div>
 			  		<div class="col-lg-8">
 			  			<h3><?php the_sub_field('title'); ?></h3>
@@ -57,15 +57,15 @@
 		<div class="col-lg-1">
 	  	</div>
 	</div>
-	<div class="row">
+	<div class="row row-eq-height">
 		<div class="col-lg-1">
 	  	</div>
-  		<div class="col-lg-5">
+  		<div class="col-lg-5 small-topbottomleftright-padding">
 	    <?php if( have_rows('card_3') ): ?>
 		    <?php while( have_rows('card_3') ): the_row(); ?>
-				<div class="row ">
+				<div class="row shadow-card small-topbottomleftright-padding">
 			  		<div class="col-lg-4">
-			  			<img src="<?php the_sub_field('image_or_icon'); ?>">
+			  			<img class="card-image" src="<?php the_sub_field('image_or_icon'); ?>">
 				  	</div>
 			  		<div class="col-lg-8">
 			  			<h3><?php the_sub_field('title'); ?></h3>
@@ -80,12 +80,12 @@
 		    <?php endwhile; ?>
 		<?php endif; ?>
 	  	</div>
-		<div class="col-lg-5">
+		<div class="col-lg-5 small-topbottomleftright-padding">
 	    <?php if( have_rows('card_4') ): ?>
 		    <?php while( have_rows('card_4') ): the_row(); ?>
-				<div class="row ">
+				<div class="row shadow-card small-topbottomleftright-padding">
 			  		<div class="col-lg-4">
-			  			<img src="<?php the_sub_field('image_or_icon'); ?>">
+			  			<img class="card-image" src="<?php the_sub_field('image_or_icon'); ?>">
 				  	</div>
 			  		<div class="col-lg-8">
 			  			<h3><?php the_sub_field('title'); ?></h3>
