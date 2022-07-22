@@ -19,7 +19,7 @@
 		    <?php while( have_rows('card_1') ): the_row(); ?>
 				<div class="row ">
 			  		<div class="col-lg-4">
-			  			<img src="<?php echo esc_url(get_sub_field('image_or_icon')['url']); ?>">
+			  			<img src="<?php the_sub_field('image_or_icon'); ?>">
 				  	</div>
 			  		<div class="col-lg-8">
 			  			<h3><?php the_sub_field('title'); ?></h3>
@@ -39,7 +39,7 @@
 		    <?php while( have_rows('card_2') ): the_row(); ?>
 				<div class="row ">
 			  		<div class="col-lg-4">
-			  			<img src="<?php echo esc_url(get_sub_field('image_or_icon')['url']); ?>">
+			  			<img src="<?php the_sub_field('image_or_icon'); ?>">
 				  	</div>
 			  		<div class="col-lg-8">
 			  			<h3><?php the_sub_field('title'); ?></h3>
@@ -65,7 +65,7 @@
 		    <?php while( have_rows('card_3') ): the_row(); ?>
 				<div class="row ">
 			  		<div class="col-lg-4">
-			  			<img src="<?php echo esc_url(get_sub_field('image_or_icon')['url']); ?>">
+			  			<img src="<?php the_sub_field('image_or_icon'); ?>">
 				  	</div>
 			  		<div class="col-lg-8">
 			  			<h3><?php the_sub_field('title'); ?></h3>
@@ -85,7 +85,7 @@
 		    <?php while( have_rows('card_4') ): the_row(); ?>
 				<div class="row ">
 			  		<div class="col-lg-4">
-			  			<img src="<?php echo esc_url(get_sub_field('image_or_icon')['url']); ?>">
+			  			<img src="<?php the_sub_field('image_or_icon'); ?>">
 				  	</div>
 			  		<div class="col-lg-8">
 			  			<h3><?php the_sub_field('title'); ?></h3>

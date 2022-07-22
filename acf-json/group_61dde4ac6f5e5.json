@@ -2683,9 +2683,9 @@
                                         "class": "",
                                         "id": ""
                                     },
-                                    "return_format": "",
+                                    "return_format": "url",
                                     "preview_size": "medium",
-                                    "library": "",
+                                    "library": "all",
                                     "min_width": "",
                                     "min_height": "",
                                     "min_size": "",
@@ -2814,9 +2814,9 @@
                                         "class": "",
                                         "id": ""
                                     },
-                                    "return_format": "",
+                                    "return_format": "url",
                                     "preview_size": "medium",
-                                    "library": "",
+                                    "library": "all",
                                     "min_width": "",
                                     "min_height": "",
                                     "min_size": "",
@@ -2945,9 +2945,9 @@
                                         "class": "",
                                         "id": ""
                                     },
-                                    "return_format": "",
+                                    "return_format": "url",
                                     "preview_size": "medium",
-                                    "library": "",
+                                    "library": "all",
                                     "min_width": "",
                                     "min_height": "",
                                     "min_size": "",
@@ -3076,7 +3076,7 @@
                                         "class": "",
                                         "id": ""
                                     },
-                                    "return_format": "array",
+                                    "return_format": "url",
                                     "preview_size": "medium",
                                     "library": "all",
                                     "min_width": "",
@@ -3695,5 +3695,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1658456014
+    "modified": 1658457665
 }
