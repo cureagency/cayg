@@ -270,6 +270,7 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
   letter-spacing: 1px;
   text-transform: uppercase;
   transition: all 1s;
+  opacity: 0.7;
 }
 .nobg-nop-button:hover {
   color: white !important;
@@ -300,6 +301,16 @@ h2 {
   margin: 0;
 }
 
+h3 {
+  font-size: 22px;
+  line-height: 28px;
+  font-family: proxima-nova, sans-serif;
+  font-weight: 600;
+  margin: 0;
+}
+h3 a {
+  color: #0E272D;
+}
 h4 {
   font-size: 16px;
   text-transform: uppercase;
@@ -332,6 +343,18 @@ p.small {
 .small p {
   font-size: 14px !important;
   line-height: 20px !important;
+}
+
+a {
+  color: #57C988;
+  transition: all 1s;
+  text-decoration: none;
+}
+a:hover {
+  color: #0E272D;
+}
+a:visited {
+  color: #57C988;
 }
 
 a.footer-link {
@@ -673,6 +696,18 @@ a.footer-link:hover {
   padding-bottom: 25px;
 }
 
+.large-topbottomleftright-padding {
+  padding: 100px;
+}
+
+.medium-topbottomleftright-padding {
+  padding: 75px;
+}
+
+.small-topbottomleftright-padding {
+  padding: 25px;
+}
+
 .large-top-padding {
   padding-top: 100px;
 }
@@ -753,6 +788,14 @@ a.footer-link:hover {
 
 .bio-reveal {
   display: block;
+}
+
+.blog-card-image {
+  height: 200px;
+  width: 100%;
+  display: block;
+  background-color: #CAD6D6;
+  border-radius: 15px 15px 0 0;
 }
 
 .home-slider-slide {

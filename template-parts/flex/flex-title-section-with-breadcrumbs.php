@@ -1,4 +1,4 @@
-<div class="container-fluid pt-5 pb-5 bg-navy background-image" 
+<div class="container-fluid large-topandbottom-padding bg-navy background-image" 
 	<?php 
 	$image = get_sub_field('background_image');
 	if( !empty( $image ) ): ?> 

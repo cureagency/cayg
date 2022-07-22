@@ -13,6 +13,23 @@ h2 {
 	margin: 0;
 }
 
+h3 {
+	font-size: 22px;
+	line-height: 28px;
+	font-family: proxima-nova, sans-serif;
+	font-weight: 600;
+	margin: 0;
+	a {
+		color: $navy;
+		&:hover {
+			$color: $green;
+		}
+		&:visited {
+			$color: $navy;
+		}
+	}
+}
+
 h4 {
 	font-size: 16px;
 	text-transform: uppercase;
@@ -47,6 +64,18 @@ p.small {
 		font-size: 14px !important;	
 		line-height: 20px !important;
 	}	
+}
+
+a {
+	color: $green;
+	transition: all 1s;
+	text-decoration: none;
+	&:hover {
+		color: $navy;
+	} 
+	&:visited {
+		color: $green;
+	}
 }
 
 a.footer-link {
