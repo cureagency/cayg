@@ -13,7 +13,7 @@
 
 <?php if( have_rows('cta_block_on_angle_bg', 'options') ): ?>
 	<?php while( have_rows('cta_block_on_angle_bg', 'options') ): the_row(); ?>
-		<div class="container mt-5 mb-5 pt-5 pb-5 bg-navy border-radius background-image" style="background-image: url('<?php the_sub_field('bg_image', 'options'); ?>');">
+		<div class="container-fluid mt-5 mb-5 pt-5 pb-5 bg-navy background-image" style="background-image: url('<?php the_sub_field('bg_image', 'options'); ?>');">
 			<div class="row align-items-center">
 				<div class="col-lg-1">
 				</div>
