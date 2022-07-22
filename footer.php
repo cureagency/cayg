@@ -58,11 +58,14 @@
 				</div>
 
 				<div class="row">
-					<div class="col-lg-6">
-						<p>Copyright 2022 Credential As You Go</p>
+					<div class="col-lg-4">
+						<p style="font-size: 12px;">The Credential As You Go initiative is supported 100% by the Institute of Education Sciences, U.S. Department of Education, through Grant R305T210063 to SUNY Empire State College. The opinions expressed are those of the authors and do not represent views of the Institute or the U.S. Department of Education.</p>
 					</div>
-					<div class="col-lg-6">
-						<p style="text-align: right;">All Rights Reserved</p>
+					<div class="col-lg-4">
+					</div>
+					<<p style="font-size: 12px;">T>&copy; COPYRIGHT 2022 CREDENTIAL AS YOU GO</p>
+					<div class="col-lg-4">
+						<p style="text-align: right; font-size: 12px;">ALL RIGHTS RESERVED</p>
 					</div>							
 				</div>
 
