@@ -115,7 +115,7 @@
 
 			        elseif( get_row_layout() == 'pressreleases_full_pull' ):
 
-			        	get_template_part( 'template-parts/flex/pressreleases-newsletter-full-pull' );
+			        	get_template_part( 'template-parts/flex/flex-pressreleases-full-pull' );
 
 			        elseif( get_row_layout() == '3_calls_to_action' ): 
 
