@@ -81,6 +81,10 @@
 
 				        get_template_part( 'template-parts/flex/flex-2-column-image-and-cta-text' );
 
+				    elseif( get_row_layout() == 'centered_title_and_4_stacked_cards' ):
+
+				        get_template_part( 'template-parts/flex/flex-centered-title-and-4-stacked-cards' );
+
 			        elseif( get_row_layout() == 'post_slider' ):
 
 			        	get_template_part( 'template-parts/flex/flex-header-post-slider' );
