@@ -1040,7 +1040,7 @@
                         },
                         {
                             "key": "field_629e03a837fd3",
-                            "label": "Newsroom Title",
+                            "label": "Blog Title",
                             "name": "newsroom_title",
                             "type": "text",
                             "instructions": "",
@@ -1059,7 +1059,7 @@
                         },
                         {
                             "key": "field_629e03b737fd4",
-                            "label": "Newsroom Button",
+                            "label": "Blog Button",
                             "name": "newsroom_button",
                             "type": "group",
                             "instructions": "",
@@ -1108,25 +1108,6 @@
                                     "placeholder": ""
                                 }
                             ]
-                        },
-                        {
-                            "key": "field_62daa88b8eb21",
-                            "label": "In the News Overline",
-                            "name": "inthenews_overline",
-                            "type": "text",
-                            "instructions": "",
-                            "required": 0,
-                            "conditional_logic": 0,
-                            "wrapper": {
-                                "width": "",
-                                "class": "",
-                                "id": ""
-                            },
-                            "default_value": "",
-                            "placeholder": "",
-                            "prepend": "",
-                            "append": "",
-                            "maxlength": ""
                         },
                         {
                             "key": "field_62daa89f8eb22",
@@ -3869,5 +3850,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1658497225
+    "modified": 1658497755
 }
