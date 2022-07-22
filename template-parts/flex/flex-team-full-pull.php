@@ -28,7 +28,7 @@
 							<?php if( get_field('short_bio') ) { ?>
 							    <p class="small mt-4"><?php the_field('short_bio'); ?></p>
 							<?php } else { ?>
-							   <p class="small mt-4"><?php echo wp_trim_words( get_field('bio'), 50, '...' ); ?></p>
+							   <p class="small mt-4"><?php echo wp_trim_words( get_field('bio'), 40, '...' ); ?></p>
 							<?php } ?>
 						</div>
 			   			<div class="col-lg-1">
