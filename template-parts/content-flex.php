@@ -101,6 +101,10 @@
 
 			        	get_template_part( 'template-parts/flex/flex-blog-full-pull' );
 
+			        elseif( get_row_layout() == 'inthenews_full_pull' ):
+
+			        	get_template_part( 'template-parts/flex/flex-inthenews-full-pull' );
+
 			        elseif( get_row_layout() == '3_calls_to_action' ): 
 
 			        	get_template_part( 'template-parts/flex/flex-3-col-cta' );
