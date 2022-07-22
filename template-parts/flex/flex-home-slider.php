@@ -51,7 +51,7 @@
 	<div class="row align-items-center bg-white home-slider-overlay">
 		<?php if( have_rows('overlay_button') ): ?>
 			<?php while( have_rows('overlay_button') ): the_row(); ?>
-				<div class="col-lg-4 home-slider-overlay-card">
+				<div class="col-xl-3 home-slider-overlay-card">
 					<div class="row">
 						<div class="col-lg-1" style="padding-top: 15px;">
 							<i class="fa-solid fa-angle-right"></i>
