@@ -21,6 +21,10 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
   color: #5BC0CE !important;
 }
 
+.gray-text {
+  color: #5D6669;
+}
+
 .green-text {
   color: #57C988 !important;
 }
@@ -148,6 +152,21 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
   color: white !important;
 }
 
+.green-button-justtext {
+  color: #57C988;
+  text-decoration: none;
+  display: inline-block;
+  font-weight: 600;
+  font-size: 14px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  transition: all 1s;
+  cursor: pointer;
+}
+.green-button-justtext:hover {
+  color: #0E272D;
+}
+
 .blue-button {
   padding: 5px 25px;
   background-color: #5BC0CE;
@@ -257,6 +276,15 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
   opacity: 0.3;
 }
 
+a.team-card-email {
+  color: #5D6669;
+  transition: all 1s;
+  text-transform: lowercase;
+}
+a.team-card-email:hover {
+  color: #0E272D;
+}
+
 h1 {
   font-size: 45px;
   color: #0e272d;
@@ -292,7 +320,18 @@ p {
   font-family: proxima-nova, sans-serif;
   font-weight: 400;
   font-size: 18px;
+  line-height: 26px;
   margin: 0;
+}
+
+p.small {
+  font-size: 14px !important;
+  line-height: 20px !important;
+}
+
+.small p {
+  font-size: 14px !important;
+  line-height: 20px !important;
 }
 
 a.footer-link {
@@ -706,6 +745,14 @@ a.footer-link:hover {
   width: 100%;
   display: block;
   background-color: #CAD6D6;
+}
+
+.bio-hide {
+  display: none;
+}
+
+.bio-reveal {
+  display: block;
 }
 
 .home-slider-slide {
